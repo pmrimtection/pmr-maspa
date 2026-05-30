@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMR Wira MA Sunan Pandanaran - Portal Resmi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c', /* Crimson Red formal */
+                            800: '#9f1239',
+                            900: '#881337',
+                            primary: '#0F172A', /* Dark Slate elegan */
+                            accent: '#be123c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .active-nav {
+            color: #be123c;
+            font-weight: 700;
+            border-bottom: 2px solid #be123c;
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 leading-relaxed overflow-x-hidden">
+
+    <!-- TOP BAR -->
+    <div class="bg-brand-primary text-slate-300 text-xs py-2.5 px-4 sm:px-8 flex justify-between items-center border-b border-slate-800">
+        <div class="flex items-center space-x-6">
+            <span class="flex items-center"><i class="fa-solid fa-envelope text-brand-accent mr-2"></i> pmrimtection@gmail.com</span>
+            <span class="hidden md:flex items-center"><i class="fa-solid fa-graduation-cap text-brand-accent mr-2"></i> Unit Wira MA Sunan Pandanaran</span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <span class="text-[10px] bg-slate-800 text-brand-100 px-2.5 py-0.5 rounded-full font-semibold">Siamo Tutti Fratelli</span>
+            <div class="h-3 w-[1px] bg-slate-700"></div>
+            <a href="#" class="hover:text-brand-accent transition"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover:text-brand-accent transition"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & Brand -->
+                <div class="flex items-center space-x-3 cursor-pointer">
+                    <!-- Updated Logo Container with Fallback -->
+                    <div class="relative w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-md overflow-hidden border border-slate-150 p-1">
+                        <img id="header-logo" 
+                            src="https://lh3.googleusercontent.com/d/10hbhtIaLgXchVz9K-MGpbJzWFJMpas6P" 
+                            alt="Logo PMR Wira MASPA" 
+                            class="w-full h-full object-contain"
+                            onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/d/10hbhtIaLgXchVz9K-MGpbJzWFJMpas6P'; this.onerror=function(){ this.style.display='none'; document.getElementById('header-logo-fallback').classList.remove('hidden'); };" />
+                        <div id="header-logo-fallback" class="hidden text-brand-accent text-xl">
+                            <i class="fa-solid fa-kit-medical"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="font-serif text-xl font-extrabold tracking-tight text-brand-primary block">PMR IMTECTION</span>
+                        <span class="text-[10px] tracking-widest font-bold text-slate-500 uppercase block -mt-1">MA Sunan Pandanaran</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 items-center" id="desktop-nav">
+                    <a href="#beranda" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Beranda</a>
+                    <a href="#prinsip" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">7 Prinsip</a>
+                    <a href="#profil" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Profil &amp; Tri Bakti</a>
+                    <a href="#program" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Program Kerja</a>
+                    <a href="#anggota" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Struktur</a>
+                    <a href="#kontak" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Hubungi</a>
+                    <a href="#kontak" class="bg-brand-primary hover:bg-slate-800 text-white text-xs font-bold uppercase tracking-wider py-3 px-6 rounded-lg shadow-md transition-all duration-200 transform hover:-translate-y-0.5">Gabung PMR</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-700 hover:text-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent rounded p-1">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-xl transition-all duration-300">
+            <div class="px-4 pt-2 pb-6 space-y-3">
+                <a href="#beranda" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Beranda</a>
+                <a href="#prinsip" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">7 Prinsip Gerakan</a>
+                <a href="#profil" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Profil &amp; Tri Bakti</a>
+                <a href="#program" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Program Kerja</a>
+                <a href="#anggota" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Struktur Pengurus</a>
+                <a href="#kontak" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Hubungi</a>
+                <div class="pt-4 border-t border-slate-100">
+                    <a href="#kontak" class="block w-full text-center bg-brand-accent hover:bg-brand-800 text-white text-sm font-bold uppercase tracking-wider py-3 rounded-lg shadow-md">Gabung PMR</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN PORTAL VIEW -->
+    <div id="portal-view" class="transition-all duration-300">
+        <!-- HERO SECTION -->
+        <section id="beranda" 
+         class="relative bg-cover bg-center bg-no-repeat text-white py-28 lg:py-36 overflow-hidden flex items-center border-b border-slate-800" 
+         style="background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('https://lh3.googleusercontent.com/d/1bJQZu75ZRF5wAX1CroWkO5LhBodde3qt');">
+            <!-- Decorative Background Elements -->
+            <div class="absolute inset-0 opacity-15 pointer-events-none">
+                <div class="absolute top-10 left-10 w-96 h-96 rounded-full bg-brand-accent filter blur-[120px]"></div>
+                <div class="absolute bottom-10 right-10 w-[600px] h-[600px] rounded-full bg-brand-900 filter blur-[150px]"></div>
+                <div class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    <!-- Text Info -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center space-x-2.5 bg-brand-accent/15 border border-brand-accent/30 backdrop-blur-md px-4 py-2 rounded-full text-brand-200 text-xs font-bold tracking-wider uppercase mb-2">
+                            <span class="flex h-2.5 w-2.5 relative">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-accent"></span>
+                            </span>
+                            <span>Impact · Protect · Action</span>
+                        </div>
+                        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+                            Mewujudkan Karakter <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-200 via-rose-300 to-rose-500">Relawan Muda Berjiwa Simpati, Empati, dan Toleransi</span>
+                        </h1>
+                        <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0">
+                            Organisasi pembinaan remaja Palang Merah Indonesia dalam mengasah karakter remaja dengan sikap menjaga, melindungi, dan mempengaruhi antar sesama.
+                        </p>
+                        <div class="pt-4 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                            <a href="#profil" class="bg-brand-accent hover:bg-brand-800 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-accent/20 transition-all duration-300 transform hover:-translate-y-0.5 text-center">
+                                Telusuri Profil <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+                            <a href="#program" class="bg-white/5 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-xl border border-white/20 backdrop-blur-sm transition-all duration-300 text-center">
+                                Inisiatif Kegiatan
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative Graphic Panel / Card with Large Logo -->
+                    <div class="lg:col-span-5 relative hidden lg:block">
+                        <div class="relative mx-auto w-full max-w-[420px]">
+                            <!-- Main Frame Mock -->
+                            <div class="bg-slate-900/95 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 shadow-2xl relative z-10 flex flex-col items-center text-center">
+                                <div class="w-full flex items-center space-x-2 mb-6 text-left">
+                                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                                    <span class="text-slate-600 text-xs ml-4 font-mono">pmr-imtection</span>
+                                </div>
+                                
+                                <!-- Logo Display in Card (using updated 1.jpg) -->
+                                <div class="relative w-32 h-32 bg-white rounded-2xl p-2 border border-white/20 shadow-xl mb-4 flex items-center justify-center overflow-hidden">
+                                    <img id="hero-logo" 
+                                         src="https://lh3.googleusercontent.com/d/10hbhtIaLgXchVz9K-MGpbJzWFJMpas6P" 
+                                         alt="Logo PMR Wira MASPA" 
+                                         class="w-full h-full object-contain filter drop-shadow"
+                                         onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/d/10hbhtIaLgXchVz9K-MGpbJzWFJMpas6P'; this.onerror=function(){ this.style.display='none'; document.getElementById('hero-logo-fallback').classList.remove('hidden'); };" />
+                                    <div id="hero-logo-fallback" class="hidden text-brand-accent text-5xl">
+                                        <i class="fa-solid fa-kit-medical"></i>
+                                    </div>
+                                </div>
+
+                                <div class="space-y-4 w-full text-left">
+                                    <div class="bg-slate-950/50 rounded-xl p-4 border border-slate-800/80">
+                                        <p class="text-brand-accent font-mono text-xs font-bold">// UNIT WIRA MASPA</p>
+                                        <h3 class="text-white text-base font-bold mt-1">Siamo Tutti Fratelli</h3>
+                                        <p class="text-xs text-slate-400 mt-1">Kita Semua Bersaudara. Semboyan kemainan universal PMR Wira.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Background Accent Glow -->
+                            <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-accent to-rose-600 rounded-3xl blur opacity-45 transition duration-1000"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STATS BAR -->
+                <div class="mt-20 pt-12 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <span class="block text-4xl font-extrabold text-brand-accent">35</span>
+                        <span class="block text-xs text-slate-400 uppercase tracking-widest mt-1 font-semibold">Anggota</span>
+                    </div>
+                    <div>
+                        <span class="block text-4xl font-extrabold text-brand-accent">3</span>
+                        <span class="block text-xs text-slate-400 uppercase tracking-widest mt-1 font-semibold">Kegiatan Sosial</span>
+                    </div>
+                    <div>
+                        <span class="block text-4xl font-extrabold text-brand-accent">9</span>
+                        <span class="block text-xs text-slate-400 uppercase tracking-widest mt-1 font-semibold">Partisipasi Kegiatan</span>
+                    </div>
+                    <div>
+                        <span class="block text-4xl font-extrabold text-brand-accent">100%</span>
+                        <span class="block text-xs text-slate-400 uppercase tracking-widest mt-1 font-semibold">Dedikasi Sukarela</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7 PRINSIP GERAKAN PALANG MERAH -->
+        <section id="prinsip" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-brand-accent">Dasar Gerakan</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-primary">7 Prinsip Dasar Gerakan Internasional</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full"></div>
+                    <p class="text-slate-500 text-sm">
+                        Setiap langkah dan tindakan relawan PMR berlandaskan pada tujuh asas universal Palang Merah dan Bulan Sabit Merah Internasional.
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Prinsip 1 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <div class="w-10 h-10 rounded-lg bg-rose-100 text-brand-accent flex items-center justify-center text-lg font-bold mb-4">1</div>
+                        <h4 class="font-bold text-brand-primary mb-2">Kemanusiaan</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Memberikan pertolongan tanpa membedakan, demi mencegah dan meringankan penderitaan sesama.</p>
+                    </div>
+                    <!-- Prinsip 2 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <div class="w-10 h-10 rounded-lg bg-rose-100 text-brand-accent flex items-center justify-center text-lg font-bold mb-4">2</div>
+                        <h4 class="font-bold text-brand-primary mb-2">Kesamaan</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Tidak membeda-bedakan bangsa, suku, agama, kelas sosial, atau pandangan politik korban.</p>
+                    </div>
+                    <!-- Prinsip 3 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <div class="w-10 h-10 rounded-lg bg-rose-100 text-brand-accent flex items-center justify-center text-lg font-bold mb-4">3</div>
+                        <h4 class="font-bold text-brand-primary mb-2">Kenetralan</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Tidak memihak pada pertentangan politik, rasial, agama, atau ideologi demi menjaga kepercayaan.</p>
+                    </div>
+                    <!-- Prinsip 4 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <div class="w-10 h-10 rounded-lg bg-rose-100 text-brand-accent flex items-center justify-center text-lg font-bold mb-4">4</div>
+                        <h4 class="font-bold text-brand-primary mb-2">Kemandirian</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Gerakan bersifat otonom, menaati peraturan negara namun tetap berpegang teguh pada prinsip kemanusiaan.</p>
+                    </div>
+                    <!-- Prinsip 5 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <div class="w-10 h-10 rounded-lg bg-rose-100 text-brand-accent flex items-center justify-center text-lg font-bold mb-4">5</div>
+                        <h4 class="font-bold text-brand-primary mb-2">Kesukarelaan</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Pemberian bantuan kemanusiaan yang didasari atas rasa sukarela, ikhlas, tanpa motif mencari keuntungan.</p>
+                    </div>
+                    <!-- Prinsip 6 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
+                        <div class="w-10 h-10 rounded-lg bg-rose-100 text-brand-accent flex items-center justify-center text-lg font-bold mb-4">6</div>
+                        <h4 class="font-bold text-brand-primary mb-2">Kesatuan</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Di dalam satu negara hanya diperbolehkan berdiri satu perhimpunan Palang Merah nasional terbuka untuk umum.</p>
+                    </div>
+                    <!-- Prinsip 7 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 col-span-1 sm:col-span-2 lg:col-span-2">
+                        <div class="w-10 h-10 rounded-lg bg-rose-100 text-brand-accent flex items-center justify-center text-lg font-bold mb-4">7</div>
+                        <h4 class="font-bold text-brand-primary mb-2">Kesemestaan</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Gerakan Palang Merah Internasional hadir secara universal di seluruh dunia, di mana setiap perhimpunan nasional memiliki status yang setara dan saling membantu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFIL & TRI BAKTI SECTION -->
+        <section id="profil" class="py-24 bg-slate-50 border-y border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-accent">Visi Kami</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-primary">Misi Mulia Menolong Sesama</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full"></div>
+                </div>
+
+                <!-- Intro Grid -->
+                <div class="grid lg:grid-cols-12 gap-12 items-center mb-24">
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative z-10 rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+                            <div class="bg-gradient-to-tr from-brand-accent to-rose-955 aspect-[4/3] flex items-center justify-center text-center p-8 text-white">
+                                <div>
+                                    <i class="fa-solid fa-heart-pulse text-white text-5xl opacity-40 mb-4"></i>
+                                    <p class="font-serif italic text-lg">
+                                        "Karakter kemanusiaan ditanamkan sejak dini melalui kepedulian nyata terhadap sesama tanpa membedakan golongan."
+                                    </p>
+                                    <div class="mt-4 text-xs font-semibold tracking-wider uppercase text-rose-200">
+                                        — PMR Wira MA Sunan Pandanaran
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 w-full h-full border-4 border-slate-200 rounded-2xl -z-0"></div>
+                    </div>
+
+                    <div class="lg:col-span-7 space-y-6">
+                        <h3 class="font-serif text-2xl lg:text-3xl font-bold text-brand-primary">Awal Berdiri</h3>
+                        <p class="text-slate-600">
+                            PMR Wira MA Sunan Pandanaran berkomitmen menjadi garda depan dalam mengampanyekan perilaku hidup bersih dan sehat, siaga pertolongan pertama, dan membina persahabatan antar remaja.
+                        </p>
+                        <p class="text-slate-600">
+                            Di bawah bimbingan Pembina PMR dan fasilitator dari Palang Merah Indonesia (PMI) Kota/Kabupaten, kami rutin mengadakan latihan mingguan yang menyenangkan, praktis, dan berorientasi pada pengembangan soft-skill kepemimpinan.
+                        </p>
+                        
+                        <div class="grid sm:grid-cols-3 gap-6 pt-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="bg-rose-100 p-2 rounded-lg text-brand-accent"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-brand-primary">Kemanusiaan</h4>
+                                    <p class="text-xs text-slate-500">Membantu tanpa pamrih.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="bg-rose-100 p-2 rounded-lg text-brand-accent"><i class="fa-solid fa-users-line"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-brand-primary">Kesamaan</h4>
+                                    <p class="text-xs text-slate-500">Tidak membeda-bedakan.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="bg-rose-100 p-2 rounded-lg text-brand-accent"><i class="fa-solid fa-handshake"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-brand-primary">Kemandirian</h4>
+                                    <p class="text-xs text-slate-500">Siap sedia menolong.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VISI, MISI, & TRI BAKTI INTERACTIVE BLOCK -->
+                <div class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-100 shadow-md">
+                    <div class="grid lg:grid-cols-12 gap-12">
+                        <!-- Left: Visi Misi -->
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="space-y-4">
+                                <div class="inline-flex p-3 bg-brand-primary text-white rounded-2xl shadow-md">
+                                    <i class="fa-solid fa-eye text-2xl"></i>
+                                </div>
+                                <h3 class="font-serif text-2xl font-bold text-brand-primary">Visi PMR</h3>
+                                <p class="text-slate-600 leading-relaxed text-base">
+                                    "Mewujudkan PMR Wira MA Sunan Pandanaran sebagai organisasi relawan muda yang berkarakter kuat, tanggap darurat, dan mengamalkan nilai-nilai kemanusiaan dalam kehidupan sehari-hari."
+                                </p>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="inline-flex p-3 bg-brand-accent text-white rounded-2xl shadow-md">
+                                    <i class="fa-solid fa-bullseye text-2xl"></i>
+                                </div>
+                                <h3 class="font-serif text-2xl font-bold text-brand-primary">Misi PMR</h3>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start space-x-2">
+                                        <i class="fa-solid fa-check text-brand-accent mt-1"></i>
+                                        <span>Menyelenggarakan latihan berkala yang berstandar nasional.</span>
+                                    </li>
+                                    <li class="flex items-start space-x-2">
+                                        <i class="fa-solid fa-check text-brand-accent mt-1"></i>
+                                        <span>Siap sedia dalam penanganan medis pertama di lingkungan sekolah.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Right: Tri Bakti PMR -->
+                        <div class="lg:col-span-7 bg-slate-50 p-6 sm:p-8 rounded-2xl shadow-inner border border-slate-100 space-y-6">
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-heart text-brand-accent text-3xl"></i>
+                                <h3 class="font-serif text-2xl font-bold text-brand-primary">Tri Bakti PMR</h3>
+                            </div>
+                            <p class="text-slate-500 text-sm">
+                                Tiga pilar utama pengabdian yang diikrarkan oleh setiap anggota Palang Merah Remaja:
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-4">
+                                    <span class="flex-shrink-0 w-8 h-8 rounded-full bg-rose-100 text-brand-accent flex items-center justify-center font-bold text-sm mt-1">1</span>
+                                    <div>
+                                        <h4 class="font-bold text-brand-primary text-base">Meningkatkan keterampilan hidup sehat</h4>
+                                        <p class="text-xs sm:text-sm text-slate-500">Membiasakan diri hidup bersih, menjaga kesehatan mental and fisik, serta menjauhi perilaku negatif/merusak.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <span class="flex-shrink-0 w-8 h-8 rounded-full bg-rose-100 text-brand-accent flex items-center justify-center font-bold text-sm mt-1">2</span>
+                                    <div>
+                                        <h4 class="font-bold text-brand-primary text-base">Berkarya dan berbakti di masyarakat</h4>
+                                        <p class="text-xs sm:text-sm text-slate-500">Turut serta dalam aksi sosial, kampanye kesehatan sekolah, mengabdi dalam menjaga posko kesehatan.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <span class="flex-shrink-0 w-8 h-8 rounded-full bg-rose-100 text-brand-accent flex items-center justify-center font-bold text-sm mt-1">3</span>
+                                    <div>
+                                        <h4 class="font-bold text-brand-primary text-base">Mempererat persahabatan nasional dan internasional</h4>
+                                        <p class="text-xs sm:text-sm text-slate-500">Membangun kerja sama dengan PMR sekolah lain, bertukar ilmu, dan menjunjung rasa kekeluargaan global.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KEGIATAN & SPESIALISASI SECTION -->
+        <section id="program" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-accent">Aktivitas Kami</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-primary">Program Kerja &amp; Pelatihan</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full"></div>
+                    <p class="text-slate-500 text-sm">
+                        Aktivitas kami berfokus pada pelatihan simulasi medis praktis, kesiapsiagaan sekolah, dan pengabdian masyarakat.
+                    </p>
+                </div>
+
+                <!-- Program Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Program Item 1 -->
+                    <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-rose-100 text-brand-accent flex items-center justify-center text-xl mb-6 group-hover:bg-brand-accent group-hover:text-white transition-all duration-300">
+                                <i class="fa-solid fa-hand-holding-medical"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-brand-primary mb-3">Screening Kesehatan</h3>
+                            <p class="text-sm text-slate-500 mb-6">
+                                Program screening kesehatan bertujuan untuk mendeteksi dini berbagai masalah kesehatan yang mungkin dialami oleh siswa.
+                            </p>
+                        </div>
+                        <div class="space-y-3 pt-4 border-t border-slate-100/60">
+                            <button onclick="openProgramModal('Screening Kesehatan', 'Program screening kesehatan bertujuan untuk mendeteksi dini berbagai masalah kesehatan yang mungkin dialami oleh siswa.', '#')" class="text-xs font-bold tracking-wider uppercase text-brand-accent hover:text-rose-700 flex items-center">
+                                Pelajari Selengkapnya <i class="fa-solid fa-chevron-right ml-2 transition-transform duration-200 group-hover:translate-x-1"></i>
+                            </button>
+                            <!-- Kolom Link Dokumentasi -->
+                            <a href="https://drive.google.com/drive/folders/1yLeSIdu3Jb0g8vnzcQ4iHdpDFFN4UMIn?usp=drive_link" target="_blank" class="inline-flex items-center text-xs font-semibold text-slate-500 hover:text-brand-accent transition-colors duration-200">
+                                <i class="fa-solid fa-camera-retro mr-1.5 text-slate-400"></i> Dokumentasi Acara
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Program Item 2 -->
+                    <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-rose-100 text-brand-accent flex items-center justify-center text-xl mb-6 group-hover:bg-brand-accent group-hover:text-white transition-all duration-300">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-brand-primary mb-3">Aksi Donor Darah Sekolah</h3>
+                            <p class="text-sm text-slate-500 mb-6">
+                                Bekerja sama dengan Unit Donor Darah (UDD) PMI daerah untuk memfasilitasi guru, staf, dan siswa yang ingin berdonor darah.
+                            </p>
+                        </div>
+                        <div class="space-y-3 pt-4 border-t border-slate-100/60">
+                            <button onclick="openProgramModal('Aksi Donor Darah', 'Sebagai bentuk nyata dari nilai kemanusiaan, PMR menjadi panitia pelaksana kegiatan donor darah berkala di sekolah. Kami membantu pendaftaran peserta, mengedukasi tentang syarat donor, dan mendampingi pendonor selama proses berlangsung.', '#')" class="text-xs font-bold tracking-wider uppercase text-brand-accent hover:text-rose-700 flex items-center">
+                                Pelajari Selengkapnya <i class="fa-solid fa-chevron-right ml-2 transition-transform duration-200 group-hover:translate-x-1"></i>
+                            </button>
+                            <!-- Kolom Link Dokumentasi -->
+                            <a href="https://drive.google.com/drive/folders/1j0qfhdLWpGr4X40Q3niDTflOa1a8jQMP?usp=drive_link" target="_blank" class="inline-flex items-center text-xs font-semibold text-slate-500 hover:text-brand-accent transition-colors duration-200">
+                                <i class="fa-solid fa-camera-retro mr-1.5 text-slate-400"></i> Dokumentasi Acara
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Program Item 3 -->
+                    <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-rose-100 text-brand-accent flex items-center justify-center text-xl mb-6 group-hover:bg-brand-accent group-hover:text-white transition-all duration-300">
+                                <i class="fa-solid fa-shield-virus"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-brand-primary mb-3">Simulasi Siaga Bencana</h3>
+                            <p class="text-sm text-slate-500 mb-6">
+                                Program penanggulangan bencana yang melibatkan edukasi, latihan darurat, dan bantuan kepada korban bencana.
+                            </p>
+                        </div>
+                        <div class="space-y-3 pt-4 border-t border-slate-100/60">
+                            <button onclick="openProgramModal('Mitigasi Erupsi Gunung Berapi', 'Program penanggulangan bencana yang melibatkan edukasi, latihan darurat, dan bantuan kepada korban bencana.', '#')" class="text-xs font-bold tracking-wider uppercase text-brand-accent hover:text-rose-700 flex items-center">
+                                Pelajari Selengkapnya <i class="fa-solid fa-chevron-right ml-2 transition-transform duration-200 group-hover:translate-x-1"></i>
+                            </button>
+                            <!-- Kolom Link Dokumentasi -->
+                            <a href="https://drive.google.com/drive/folders/1gN4faKSnVCuOBbOCEM6JWZWAKR6Vv2Qx?usp=drive_link" target="_blank"
+                             class="inline-flex items-center text-xs font-semibold text-slate-500 hover:text-brand-accent transition-colors duration-200">
+                                <i class="fa-solid fa-camera-retro mr-1.5 text-slate-400"></i> Dokumentasi Acara
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ANGGOTA & PENGURUS PMR SECTION -->
+        <section id="anggota" class="py-24 bg-slate-50 border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-accent">Struktur Organisasi</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-primary">Pengurus Unit &amp; Anggota</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full"></div>
+                    <p class="text-slate-500 text-sm">
+                        Kepengurusan PMR dikelola secara mandiri oleh siswa secara aktif, demokratis, dan bertanggung jawab di bawah bimbingan Guru.
+                    </p>
+                </div>
+
+                <!-- NEW DUAL-FILTER INTERFACE & SEARCH BAR -->
+                <div class="mb-12 space-y-4 bg-white p-6 rounded-2xl border border-slate-150 shadow-sm">
+                    <!-- Row 1: Filter Divisi -->
+                    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                        <div class="space-y-1.5">
+                            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">Saring Berdasarkan Divisi:</span>
+                            <div class="flex flex-wrap gap-2 font-sans" id="filter-buttons-role">
+                                <button onclick="filterTeamRole('all')" class="filter-btn-role px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg bg-brand-accent text-white transition-all">Semua</button>
+                                <button onclick="filterTeamRole('Pembina')" class="filter-btn-role px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg text-slate-600 bg-slate-100 hover:bg-slate-200 transition-all">Pembina</button>
+                                <button onclick="filterTeamRole('BPH')" class="filter-btn-role px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg text-slate-600 bg-slate-100 hover:bg-slate-200 transition-all">BPH / Inti</button>
+                                <button onclick="filterTeamRole('SPAB')" class="filter-btn-role px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg text-slate-600 bg-slate-100 hover:bg-slate-200 transition-all">SPAB</button>
+                                <button onclick="filterTeamRole('PENGEMAS')" class="filter-btn-role px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg text-slate-600 bg-slate-100 hover:bg-slate-200 transition-all">Pengemas</button>
+                                <button onclick="filterTeamRole('HUMAS')" class="filter-btn-role px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg text-slate-600 bg-slate-100 hover:bg-slate-200 transition-all">Humas</button>
+                                <button onclick="filterTeamRole('LOGISTIK')" class="filter-btn-role px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg text-slate-600 bg-slate-100 hover:bg-slate-200 transition-all">Logistik</button>
+                            </div>
+                        </div>
+
+                        <!-- Search Box in Right Aligned Desk -->
+                        <div class="relative max-w-xs w-full lg:mt-6">
+                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input type="text" id="search-member" onkeyup="searchTeam()" placeholder="Cari nama pengurus..." class="w-full pl-9 pr-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Filter Gender (Putra / Putri) -->
+                    <div class="pt-3 border-t border-slate-100">
+                        <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-1.5">Kategori Gender:</span>
+                        <div class="flex flex-wrap gap-2 font-sans" id="filter-buttons-gender">
+                            <button onclick="filterTeamGender('all')" class="filter-btn-gender px-4 py-1.5 text-xs font-bold uppercase tracking-wider rounded-lg bg-brand-primary text-white transition-all">Semua</button>
+                            <button onclick="filterTeamGender('putra')" class="filter-btn-gender px-4 py-1.5 text-xs font-bold uppercase tracking-wider rounded-lg text-slate-600 bg-slate-100 hover:bg-slate-200 transition-all"><i class="fa-solid fa-mars mr-1.5"></i> Putra (Pa)</button>
+                            <button onclick="filterTeamGender('putri')" class="filter-btn-gender px-4 py-1.5 text-xs font-bold uppercase tracking-wider rounded-lg text-slate-600 bg-slate-100 hover:bg-slate-200 transition-all"><i class="fa-solid fa-venus mr-1.5"></i> Putri (Pi)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TEAM LIST GRID ( Pembina, BPH, SPAB, PENGEMAS, HUMAS, LOGISTIK ) -->
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8" id="team-grid">
+                    
+                    <!-- 1. PEMBINA (1 Orang) -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="Pembina" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <img src="https://lh3.googleusercontent.com/d/1AhGdonitf3FZC69OCd9mhnGzwwaxTHaF" alt="Saa'atin S.Pd" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-rose-100 text-brand-accent text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Pembina</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                <a href="https://www.instagram.com/saatinn_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Saa'atin S.Pd</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Pembina PMR</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Guru Matematika & Fisika</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. BPH - KETUA PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                         <img src="https://lh3.googleusercontent.com/d/1aw8tjN4KMEl7h52Fygz2ILs5ABhmdbka" alt="Ahmad Yusup Maulana" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                <a href="https://www.instagram.com/ucupp_maull/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Ahmad Yusup Maulana</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Ketua (Putra)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII J IPA-SOSIOLOGI</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. BPH - WAKIL KETUA PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1YiuTpdThqN6Ev-QwKUNb2MiuGbdoMC4l" alt="Muhammad Kevin Nabil" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                <a href="https://www.instagram.com/kevinable_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Muhammad Kevin Nabil</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Wakil Ketua BPH (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. BPH - SEKRETARIS PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1EkLzuVXfLBIKEfgjHO62YUW6ey5IHycT" alt="Rizqy Shyam Maula" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/sammaula_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Rizqy Shyam Maula</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Sekretaris BPH (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII K IPA-EKONOMI</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. BPH - BENDAHARA PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1tzP6_rjg-xj4jHLppywAeY9r3FaBw-9u" alt="Hanan Abdullah Gianni Hafiz" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/hananabdullah_23/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Hanan Abdullah Gianni Hafiz</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Bendahara BPH (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII L IPS-BIOLOGI</p>
+                        </div>
+                    </div>
+
+                    <!-- 6. BPH - KETUA PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1T_0r3k66LZucdMZ8n3LeUZHXQJq88MlS" alt="Nayyara Ramadhani Putri Irhanto" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/4yyaaaaa_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Nayyara Ramadhani Putri Irhanto</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Ketua (Putri)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII A IPA-EKONOMI</p>
+                        </div>
+                    </div>
+
+                    <!-- 7. BPH - WAKIL KETUA PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1Y7L2kNkz7ShqSjJ2ugnUgAnuX-sF8DnU" alt="Fisti Husnaa" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/fstihsna/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Fisti Husnaa</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Wakil Ketua BPH (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII C IPA</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. BPH - SEKRETARIS PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1jzNHMBIBeBWWoyFX9QhDB0wFJf57jVdW" alt="Naela Salsabila" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/naelannaa/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Naela Salsabila</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Sekretaris BPH (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII B IPA</p>
+                        </div>
+                    </div>
+
+                    <!-- 9. BPH - BENDAHARA I PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <img src="https://lh3.googleusercontent.com/d/1qQ6qlmtJFw7ptBLbmnRQZbM3ZaWAbF6l" alt="Aurelia Alhusni" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/aurelalhsni/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Aurelia Alhusni</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">BENDAHARA I BPH (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII F IPS</p>
+                        </div>
+                    </div>
+
+                    <!-- 10. BPH - BENDAHARA II PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1SApZQRqkaU-nnuby7z1U9N72uIkpPldr" alt="Keyla Salsabila" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/keysabiella/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Keyla Salsabila</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">BENDAHARA II BPH (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        </div>
+                    </div>
+
+                    <!-- 6. SPAB - KADIV. PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1F4PiZc2q2WAsfMmpIbeLd-ZJyTqGGMF4" alt="Azzukhruf Surya Aryatama" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/zor.rop_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Azzukhruf Surya Aryatama</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. SPAB (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII L IPS-BIOLOGI</p>
+                        </div>
+                    </div>
+
+                    <!-- 6. SPAB - ANGGOTA PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1Av6FPEiGx_-j0-TD3oDxR-pIM5envYQH" alt="Mochammad Haidar Firjallah Mubarak" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="http://instagram.com/cheedaar._/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Mochammad Haidar Firjallah Mubarak</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota SPAB (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII J IPA-SOSIOLOGI</p>
+                        </div>
+                    </div>
+
+                    <!-- 7. SPAB - KADIV. PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1HhxV8oBJ6o98m9nHubFAdRAHp2Cq0YVh" alt="Abida Nur Khasanah" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/abidakhsaa/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Abida Nur Khasanah</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. SPAB (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII E IPS</p>
+                        </div>
+                    </div>
+
+                    <!-- 7. SPAB - ANGGOTA I -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1Xuniq8ZXJKRj1xNb9K1HdjSczKye4MP3" alt="Karinda Putri Alicia" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/krindaaptrii/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Karinda Putri Alicia</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I SPAB (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        </div>
+                    </div>
+
+                    <!-- 7. SPAB - ANGGOTA II -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1-Oq7Pjwb7Lbf9fVnjYHRl0r_QPtGZY0-" alt="Lutfiana Eka Nuraini" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/lutfi__ana2310/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Lutfiana Eka Nuraini</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II SPAB (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. PENGEMAS - KADIV. PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1V7hDj78slliPXQbGtbeD1PV0OrPM1hxv" alt="Aditia Airlagga" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/adizz_t/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Aditia Airlagga</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Pengemas (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII K IPA-EKONOMI</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. PENGEMAS - ANGGOTA I PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1vLz8hEbw-R4C4gmHGYdKtPsB6JSw8Yez" alt="Muhammad Zharif Zulfadhli" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/_.muzalf/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Muhammad Zharif Zulfadhli</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Pengemas (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII K IPA-EKONOMI</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. PENGEMAS - ANGGOTA II PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1cp15G2ZRSd8nwO0EjeDm9dX9IgKVqjDM" alt="Adhe Saputra" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/saatinn_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Adhe Saputra</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Pengemas (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        </div>
+                    </div>
+
+                    <!-- 9. PENGEMAS - KADIV. PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1GV2Zwd_1-VNMQM8BRxono0GTn0D4s1vy" alt="Lala Nurmala" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/lalanrmla._/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Lala Nurmala</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Pengemas (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII C IPA</p>
+                        </div>
+                    </div>
+
+                    <!-- 9. PENGEMAS - ANGGOTA I PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1gwhQnSFgDXt-nbzRsfDk5Uvyp16zmFgr" alt="Jihan Syafi'ah Agustina" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/jiehansyaa/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Jihan Syafi’ah Agustina</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Pengemas (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII B IPA</p>
+                        </div>
+                    </div>
+
+                    <!-- 9. PENGEMAS - ANGGOTA II PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1cQ33za224_tHhc35I2RV-_spWPqeCRGi" alt="Zaskya Syawaila Purnomo" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/syawailaa/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Zaskya Syawaila Purnomo</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Aggota II Pengemas (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        </div>
+                    </div>
+
+                    <!-- 9. PENGEMAS - ANGGOTA III PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1NXLLpYVOHiTFMqKZqQYphSvQnlNw_us0" alt="Qonita Azza Mumtaaza" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/yayzaaq_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Qonita Azza Mumtaaza</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota III Pengemas (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        </div>
+                    </div>
+
+
+                    <!-- 10. HUMAS - KADIV. PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/19QfwNOsVWRQZGvqI9H5571d4JoW8iGxE" alt="Ahmad Yani" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/acmdyani_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Ahmad Yani</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Humas (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII M IPK-BIOLOGI EKONOMI</p>
+                        </div>
+                    </div>
+
+                    <!-- 10. HUMAS - ANGGOTA I PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1C3n1uN6x8DYkLgfIKy4dQ1CP4ZymSX6W" alt="Danish Haziq Rabbani" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/dnieesh._/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Danish Haziq Rabbani</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Humas (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII L IPS-BIOLOGI</p>
+                        </div>
+                    </div>
+
+                    <!-- 10. HUMAS - ANGGOTA II PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1G9skIsoHB8JKIeonvh7UKCFRzQ85dMbE" alt="Syaiful Arif" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/scriiefff.11/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Syaiful Arif</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Humas (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        </div>
+                    </div>
+
+                    <!-- 11. HUMAS - KADIV. PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1vG9AdVx7qVKXga49LR2NZDnfjiuQNy1f" alt="Arha Rosyada Salsabila" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/rhslsba/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Arha Rosyada Salsabila</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Humas (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII G IPK</p>
+                        </div>
+                    </div>
+
+                    <!-- 11. HUMAS - ANGGOTA I PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1gjtBriOy2YwrIAkR5tJFxNTGQ1Ooh0le" alt="Aulia Putri Mislam" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/auliaaapee/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Aulia Putri Mislam</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Humas (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII B IPA</p>
+                        </div>
+                    </div>
+
+                    <!-- 11. HUMAS - ANGGOTA II PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1WLfxkfUNZBUEScBRjfsLjF7XzQPLHFBb" alt="Lubna Sa’da Azkia" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/em.co4u/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Lubna Sa’da Azkia</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Humas (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        </div>
+                    </div>
+
+                    <!-- 11. HUMAS - ANGGOTA III PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1BhLhP9oTG6y37zn1yisxR_UeFJmNfF1m" alt="Jazil Farischa Chusna" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/jazieell__/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Jazil Farischa Chusna</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota III Humas (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        </div>
+                    </div>
+
+                    <!-- 12. LOGISTIK - KADIV. PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1EbjbQcHYHU9Et0-nbwxBKY5SnqXG9apB" alt="Tedi Stefani" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/tedistevani_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Tedi Stefani</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Logistik (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII K IPA-EKONOMI</p>
+                        </div>
+                    </div>
+
+                    <!-- 12. LOGISTIK - ANGGOTA I PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1AIdfNnbZBKmLoMtFcqwCFHKQNEqDHJpU" alt="Muhammad Haikal Rizq" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/m.haikalrizq/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Muhammad Haikal Rizq</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Logistik (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII M IPK-BIOLOGI EKONOMI</p>
+                        </div>
+                    </div>
+
+                    <!-- 12. LOGISTIK - ANGGOTA II PUTRA -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putra">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1Ly-ISBWFRiEPP4SJqaWj5alC0msl2mDT" alt="Muhammad Rafif Tsaqib" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/saatinn_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Muhammad Rafif Tsaqib</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Logistik (Pa)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        </div>
+                    </div>
+
+                    <!-- 13. LOGISTIK - KADIV. PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1lYC_cvkK_Ee7zJIOytPa9Ouf6eHYYzbd" alt="Maulida Tazkya" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/justtazkiyy_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Maulida Tazkya</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Logistik (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII C IPA</p>
+                        </div>
+                    </div>
+
+                    <!-- 13. LOGISTIK - ANGGOTA I PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1PirSKk4Nz1U538SyRN0NNerEcC7lM4SW" alt="Salsa Egalita" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/egalitarian.sal_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Salsa Egalita</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Logistik (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII A IPA-EKONOMI</p>
+                        </div>
+                    </div>
+
+                    <!-- 13. LOGISTIK - ANGGOTA II PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1j1tQ_cC98cy7ysGChkgBQMBNX6OIA6HF" alt="Nagisa Arum" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/nnagisaa_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Nagisa Arum</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Logistik (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        </div>
+                    </div>
+
+                    <!-- 13. LOGISTIK - ANGGOTA III PUTRI -->
+                    <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putri">
+                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/19ShAUw3G1VevsZW1Jf9Mv9ftk2gqw78r" alt="Adinda Adzra Firamadhani" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                                <div class="flex space-x-3 text-white">
+                                    <a href="https://www.instagram.com/adzra.fidewaz/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
+                                        <i class="fa-brands fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-lg font-serif">Adinda Adzra Firamadhani</h3>
+                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota III Logistik (Pi)</p>
+                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ INTERACTIVE ACCORDION -->
+        <section class="py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-accent">Informasi Gabung</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-primary">Tanya Jawab (FAQ)</h2>
+                    <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full"></div>
+                    <p class="text-slate-500 text-sm">
+                        Pertanyaan yang paling sering diajukan mengenai pendaftaran dan operasional unit PMR Wira.
+                    </p>
+                </div>
+
+                <!-- Accordion Wrapper -->
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+                        <button onclick="toggleFaq(1)" class="w-full text-left px-6 py-4 flex justify-between items-center font-bold text-brand-primary hover:bg-slate-100 transition focus:outline-none">
+                            <span>Siapa saja yang boleh bergabung dengan PMR Wira?</span>
+                            <i id="faq-icon-1" class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-200"></i>
+                        </button>
+                        <div id="faq-ans-1" class="hidden px-6 pb-5 pt-2 text-slate-600 text-sm border-t border-slate-200">
+                            PMR Wira diperuntukkan bagi seluruh siswa MA Sunan Pandanaran aktif kelas X dan XI yang memiliki minat dan kemauan sosial tinggi untuk mengabdi di bidang kemanusiaan dan kesehatan.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+                        <button onclick="toggleFaq(2)" class="w-full text-left px-6 py-4 flex justify-between items-center font-bold text-brand-primary hover:bg-slate-100 transition focus:outline-none">
+                            <span>Kapan jadwal latihan rutin PMR diadakan?</span>
+                            <i id="faq-icon-2" class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-200"></i>
+                        </button>
+                        <div id="faq-ans-2" class="hidden px-6 pb-5 pt-2 text-slate-600 text-sm border-t border-slate-200">
+                            Latihan rutin diadakan setiap hari Jumat selepas jam belajar mengajar selesai, yaitu pukul 14.00 - 16.00 WIB bertempat di Ruang UKS atau lapangan sekolah.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50">
+                        <button onclick="toggleFaq(3)" class="w-full text-left px-6 py-4 flex justify-between items-center font-bold text-brand-primary hover:bg-slate-100 transition focus:outline-none">
+                            <span>Apakah ada biaya untuk bergabung dan mengikuti sertifikasi?</span>
+                            <i id="faq-icon-3" class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-200"></i>
+                        </button>
+                        <div id="faq-ans-3" class="hidden px-6 pb-5 pt-2 text-slate-600 text-sm border-t border-slate-200">
+                            Sama sekali tidak ada biaya. Seluruh pembinaan, buku saku materi, alat medis latihan pertolongan pertama, dan proses sertifikasi didukung penuh oleh anggaran kesiswaan sekolah dan PMI Kota.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HUBUNGI KAMI SECTION -->
+        <section id="kontak" class="py-24 bg-slate-50 border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12">
+                    <!-- Contact Info Column -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div class="space-y-3">
+                            <span class="text-xs font-bold uppercase tracking-widest text-brand-accent">Sekretariat PMR</span>
+                            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-primary">Mari Terhubung dengan Kami</h2>
+                            <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full"></div>
+                        </div>
+                        <p class="text-slate-500">
+                            Ingin tahu jadwal latihan, ingin mengundang kami dalam bakti sosial, atau ingin bertanya mengenai pendaftaran anggota baru? Jangan ragu menghubungi kami!
+                        </p>
+                        
+                        <!-- Contact Detail Cards -->
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-rose-100 text-brand-accent flex items-center justify-center rounded-lg mt-1 flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-brand-primary">Ruang UKS</h4>
+                                    <p class="text-slate-500 text-sm">Gedung Madrasah Aliyah Sunan Pandanaran, Jl. Kaliurang Km. 12.5, Sleman, Yogyakarta</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-rose-100 text-brand-accent flex items-center justify-center rounded-lg mt-1 flex-shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-brand-primary">Email Unit</h4>
+                                    <p class="text-slate-500 text-sm">pmrimtection@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Column -->
+                    <div class="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-10 border border-slate-150 shadow-md relative">
+                        <!-- Success Alert Message overlay -->
+                        <div id="contact-success" class="hidden absolute inset-0 bg-white rounded-3xl z-20 flex flex-col items-center justify-center p-8 text-center transition-all duration-300">
+                            <div class="w-20 h-20 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mb-6 shadow-inner">
+                                <i class="fa-solid fa-check text-4xl"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-brand-primary">Pesan Berhasil Terkirim!</h3>
+                            <p class="text-slate-500 mt-2 max-w-md">
+                                Terima kasih telah menghubungi kami. Pengurus PMR atau Pembina akan segera merespons pesanmu melalui email atau WhatsApp. Tetap jaga kesehatan, ya!
+                            </p>
+                            <button onclick="resetContactForm()" class="mt-6 text-sm font-semibold text-brand-accent hover:underline">Kirim pesan baru</button>
+                        </div>
+
+                        <!-- Main Contact Form -->
+                        <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Nama Lengkap *</label>
+                                    <input type="text" required placeholder="Contoh: PMR IMTECTION" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Kelas &amp; Jurusan *</label>
+                                    <input type="text" required placeholder="Contoh: XII A IPA-EKONOMI" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all">
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Nomor WhatsApp / HP</label>
+                                    <input type="tel" placeholder="08123456789" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Tujuan Pesan *</label>
+                                    <select required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all text-slate-600">
+                                        <option value="">Pilih Tujuan...</option>
+                                        <option value="daftar">Ingin Gabung PMR</option>
+                                        <option value="kegiatan">Pertanyaan Kegiatan / Pelatihan</option>
+                                        <option value="sosial">Undangan Bakti Sosial / Kerjasama</option>
+                                        <option value="lainnya">Pertanyaan Umum</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Pesanmu *</label>
+                                <textarea required rows="4" placeholder="Tuliskan pertanyaanmu secara sopan dan jelas disini..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all"></textarea>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <input type="checkbox" required id="agreement" class="w-4 h-4 text-brand-accent border-slate-300 rounded focus:ring-brand-accent">
+                                <label for="agreement" class="text-xs text-slate-500">Saya mengirimkan data ini dengan jujur dan sopan untuk keperluan komunikasi PMR.</label>
+                            </div>
+                            <button type="submit" class="w-full bg-brand-accent hover:bg-brand-800 text-white font-bold py-4 rounded-xl shadow-lg transition-all duration-200 transform hover:-translate-y-0.5">
+                                <i class="fa-solid fa-paper-plane mr-2"></i> Kirim Pertanyaan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-primary text-slate-400 pt-16 pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="relative w-11 h-11 bg-white rounded-xl flex items-center justify-center p-1 overflow-hidden border border-slate-800">
+                            <img id="footer-logo" 
+                                 src="https://lh3.googleusercontent.com/d/10hbhtIaLgXchVz9K-MGpbJzWFJMpas6P" 
+                                 alt="Logo PMR Wira MASPA" 
+                                 class="w-full h-full object-contain"
+                                 onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/d/10hbhtIaLgXchVz9K-MGpbJzWFJMpas6P'; this.onerror=function(){ this.style.display='none'; document.getElementById('footer-logo-fallback').classList.remove('hidden'); };" />
+                            <div id="footer-logo-fallback" class="hidden text-brand-accent text-lg">
+                                <i class="fa-solid fa-kit-medical"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="font-serif text-white text-xl font-bold tracking-tight block">PMR IMTECTION</span>
+                            <span class="text-[9px] tracking-wider font-semibold text-slate-400 uppercase block -mt-1">MA Sunan Pandanaran</span>
+                        </div>
+                    </div>
+                    <p class="text-sm">
+                        Membangun karakter pemuda kemanusiaan yang tanggap, berempati tinggi, mandiri, serta gemar berbakti kepada masyarakat luas.
+                    </p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-6">Pintasan Informasi</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#beranda" class="hover:text-white transition">Beranda Utama</a></li>
+                        <li><a href="#prinsip" class="hover:text-white transition">7 Prinsip Gerakan</a></li>
+                        <li><a href="#profil" class="hover:text-white transition">Visi, Misi &amp; Tri Bakti</a></li>
+                        <li><a href="#program" class="hover:text-white transition">Program &amp; Kegiatan</a></li>
+                        <li><a href="#anggota" class="hover:text-white transition">Daftar Pengurus Inti</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legalities -->
+                <div>
+                    <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-6">Prinsip Dasar PMI</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li>1. Kemanusiaan</li>
+                        <li>2. Kesamaan</li>
+                        <li>3. Kenetralan</li>
+                        <li>4. Kemandirian</li>
+                        <li>5. Kesukarelaan</li>
+                        <li>6. Kesatuan</li>
+                        <li>7. Kesemestaan</li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-6">Langganan Mading Digital</h4>
+                    <p class="text-sm">
+                        Dapatkan buletin kesehatan, tips pertolongan pertama dasar, dan jadwal kegiatan PMR langsung ke emailmu.
+                    </p>
+                    <form onsubmit="event.preventDefault(); document.getElementById('newsletter-input').value=''; openProgramModal('Mading Digital', 'Terima kasih! Kamu telah terdaftar untuk menerima berita bulanan PMR Wira MA Sunan Pandanaran langsung melalui surat elektronik.', '#')" class="flex">
+                        <input type="email" id="newsletter-input" required placeholder="Email aktifmu..." class="w-full px-4 py-2.5 bg-slate-800 border border-slate-700 rounded-l-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-brand-accent">
+                        <button type="submit" class="bg-brand-accent hover:bg-brand-800 text-white px-4 rounded-r-lg flex items-center justify-center transition">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800/80 text-center md:flex md:justify-between md:items-center text-xs">
+                <p>&copy; 2026 PMR Wira MA Sunan Pandanaran. Berbakti Untuk Negeri.</p>
+                <div class="mt-4 md:mt-0 flex justify-center space-x-6">
+                    <span class="text-slate-500">Siamo Tutti Fratelli</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE PROGRAM MODAL -->
+    <div id="program-modal" class="hidden fixed inset-0 z-[100] bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-100 transform transition-all scale-95 duration-300">
+            <div class="p-6 sm:p-8 space-y-4">
+                <div class="flex justify-between items-center">
+                    <span class="text-xs font-bold text-brand-accent uppercase tracking-wider">Detail Program Kegiatan</span>
+                    <button onclick="closeProgramModal()" class="text-slate-400 hover:text-slate-600 focus:outline-none">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+                <h3 id="modal-title" class="font-serif text-2xl font-bold text-brand-primary">Judul Program</h3>
+                <p id="modal-desc" class="text-slate-600 text-sm leading-relaxed">Penjelasan rinci program.</p>
+                
+                <!-- Kolom Link Dokumentasi dalam Modal -->
+                <div id="modal-documentation-wrapper" class="pt-2">
+                    <a id="modal-documentation-link" href="PASTE_LINK_GOOGLE_DRIVE_DISINI" target="_blank" class="inline-flex items-center px-4 py-2.5 bg-rose-50 text-brand-accent border border-brand-accent/20 rounded-xl text-xs font-semibold hover:bg-rose-100 transition-colors duration-200">
+                        <i class="fa-solid fa-camera-retro mr-2"></i> Lihat Dokumentasi Acara Ini
+                    </a>
+                </div>
+
+                <div class="pt-4 border-t border-slate-100 flex justify-end">
+                    <button onclick="closeProgramModal()" class="bg-brand-primary text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-xl hover:bg-brand-primary/95 transition">
+                        Tutup Jendela
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // MOBILE HAMBURGER MENU TOGGLE
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                menuIcon.className = 'fa-solid fa-xmark text-2xl';
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            }
+        });
+
+        // Close mobile menu when clicking nav links
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            });
+        });
+
+        // SHIFTING NAV ACTIVE STATE ON SCROLL
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('#desktop-nav > a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 120)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active-nav');
+                if (link.getAttribute('href').includes(current) && current !== '') {
+                    link.classList.add('active-nav');
+                }
+            });
+        });
+
+        // FAQ ACCORDION TOGGLE
+        function toggleFaq(id) {
+            const ans = document.getElementById(`faq-ans-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            const isOpen = !ans.classList.contains('hidden');
+
+            // Close all first for clean formal experience
+            for (let i = 1; i <= 3; i++) {
+                document.getElementById(`faq-ans-${i}`).classList.add('hidden');
+                document.getElementById(`faq-icon-${i}`).classList.remove('rotate-180');
+            }
+
+            if (!isOpen) {
+                ans.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            }
+        }
+
+        // NEW MULTI-FILTERING STATE VARIABLES
+        let activeRole = 'all';
+        let activeGender = 'all';
+
+        // FILTER BY ROLE/DIVISION
+        function filterTeamRole(role) {
+            activeRole = role;
+
+            // Highlight chosen Role button
+            const buttons = document.querySelectorAll('.filter-btn-role');
+            buttons.forEach(btn => {
+                btn.className = "filter-btn-role px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg text-slate-600 bg-slate-100 hover:bg-slate-200 transition-all";
+            });
+            event.target.className = "filter-btn-role px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg bg-brand-accent text-white transition-all";
+
+            applyBothFilters();
+        }
+
+        // FILTER BY GENDER (PUTRA / PUTRI)
+        function filterTeamGender(gender) {
+            activeGender = gender;
+
+            // Highlight chosen Gender button
+            const buttons = document.querySelectorAll('.filter-btn-gender');
+            buttons.forEach(btn => {
+                btn.className = "filter-btn-gender px-4 py-1.5 text-xs font-bold uppercase tracking-wider rounded-lg text-slate-600 bg-slate-100 hover:bg-slate-200 transition-all";
+            });
+            event.target.className = "filter-btn-gender px-4 py-1.5 text-xs font-bold uppercase tracking-wider rounded-lg bg-brand-primary text-white transition-all";
+
+            applyBothFilters();
+        }
+
+        // APPLY FILTERS CONCURRENTLY
+        function applyBothFilters() {
+            const cards = document.querySelectorAll('.team-card');
+
+            cards.forEach(card => {
+                const cardRole = card.getAttribute('data-role');
+                const cardGender = card.getAttribute('data-gender');
+
+                const matchesRole = (activeRole === 'all' || cardRole === activeRole);
+                const matchesGender = (activeGender === 'all' || cardGender === activeGender);
+
+                if (matchesRole && matchesGender) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // SEARCH FUNCTION WITHIN CURRENT FILTER STATE
+        function searchTeam() {
+            const searchQuery = document.getElementById('search-member').value.toLowerCase();
+            const cards = document.querySelectorAll('.team-card');
+
+            cards.forEach(card => {
+                const name = card.querySelector('h3').innerText.toLowerCase();
+                const title = card.querySelector('p').innerText.toLowerCase();
+                
+                // Match search input AND currently active filter parameters
+                const matchesSearch = (name.includes(searchQuery) || title.includes(searchQuery));
+                const cardRole = card.getAttribute('data-role');
+                const cardGender = card.getAttribute('data-gender');
+                
+                const matchesRole = (activeRole === 'all' || cardRole === activeRole);
+                const matchesGender = (activeGender === 'all' || cardGender === activeGender);
+
+                if (matchesSearch && matchesRole && matchesGender) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // PROGRAM MODAL FUNCTIONS
+        function openProgramModal(title, description, docLink = '#') {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-desc').innerText = description;
+            
+            // Set Documentation Link in Modal
+            const docWrapper = document.getElementById('modal-documentation-wrapper');
+            const modalDocLink = document.getElementById('modal-documentation-link');
+                if (docLink && docLink !== '#') {
+                    modalDocLink.href = docLink;
+                    docWrapper.classList.remove('hidden');
+                } else {
+                    document.getElementById('modal-documentation-wrapper').classList.add('hidden');
+                }
+
+                const modal = document.getElementById('program-modal');
+                modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.firstElementChild.classList.remove('scale-95');
+                modal.firstElementChild.classList.add('scale-100');
+            }, 10);
+        }
+
+        // Close Program Modal
+        function closeProgramModal() {
+            const modal = document.getElementById('program-modal');
+            modal.firstElementChild.classList.add('scale-95');
+            modal.firstElementChild.classList.remove('scale-100');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 150);
+        }
+
+        // CONTACT FORM FORMULIR HANDLING
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const submitBtn = event.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner animate-spin mr-2"></i> Mengirim...';
+            submitBtn.disabled = true;
+
+            setTimeout(() => {
+                document.getElementById('contact-success').classList.remove('hidden');
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 1200);
+        }
+
+        function resetContactForm() {
+            document.getElementById('contact-form').reset();
+            document.getElementById('contact-success').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
