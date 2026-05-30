@@ -1383,36 +1383,42 @@
                         </div>
 
                         <!-- Main Contact Form -->
-                        <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            
+                            <input type="hidden" name="access_key" value="a785fffc-7047-4645-b71b-6bcaf1ff7728">
+                            
+                            <input type="hidden" name="from_name" value="Portal PMR Wira">
+                            <input type="hidden" name="subject" value="Pertanyaan Baru dari Portal PMR!">
+
                             <div class="grid md:grid-cols-2 gap-6">
                                 <div class="space-y-2">
                                     <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Nama Lengkap *</label>
-                                    <input type="text" required placeholder="Contoh: PMR IMTECTION" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all">
+                                    <input type="text" name="Nama Pengirim" required placeholder="Contoh: PMR IMTECTION" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all">
                                 </div>
                                 <div class="space-y-2">
                                     <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Kelas &amp; Jurusan *</label>
-                                    <input type="text" required placeholder="Contoh: XII A IPA-EKONOMI" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all">
+                                    <input type="text" name="Kelas & Jurusan" required placeholder="Contoh: XII A IPA-EKONOMI" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all">
                                 </div>
                             </div>
                             <div class="grid md:grid-cols-2 gap-6">
                                 <div class="space-y-2">
-                                    <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Nomor WhatsApp / HP</label>
-                                    <input type="tel" placeholder="08123456789" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Instagram</label>
+                                    <input type="text" name="Instagram" placeholder="@username" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all">
                                 </div>
                                 <div class="space-y-2">
                                     <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Tujuan Pesan *</label>
-                                    <select required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all text-slate-600">
+                                    <select name="Tujuan Pesan" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all text-slate-600">
                                         <option value="">Pilih Tujuan...</option>
                                         <option value="daftar">Ingin Gabung PMR</option>
-                                        <option value="kegiatan">Pertanyaan Kegiatan / Pelatihan</option>
-                                        <option value="sosial">Undangan Bakti Sosial / Kerjasama</option>
+                                        <option value="kegiatan">Pertanyaan Kegiatan</option>
+                                        <option value="sosial">Kerjasama</option>
                                         <option value="lainnya">Pertanyaan Umum</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="space-y-2">
                                 <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Pesanmu *</label>
-                                <textarea required rows="4" placeholder="Tuliskan pertanyaanmu secara sopan dan jelas disini..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all"></textarea>
+                                <textarea name="Isi Pesan" required rows="4" placeholder="Tuliskan pertanyaanmu secara sopan dan jelas disini..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-accent focus:border-transparent transition-all"></textarea>
                             </div>
                             <div class="flex items-center space-x-2">
                                 <input type="checkbox" required id="agreement" class="w-4 h-4 text-brand-accent border-slate-300 rounded focus:ring-brand-accent">
@@ -1710,19 +1716,47 @@
             }, 150);
         }
 
-        // CONTACT FORM FORMULIR HANDLING
+        // CONTACT FORM FORMULIR HANDLING (Sudah mendukung kirim email & hapus instan)
         function handleFormSubmit(event) {
             event.preventDefault();
-            const submitBtn = event.target.querySelector('button[type="submit"]');
+            const form = event.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
+            
+            // Mengubah tombol menjadi animasi loading
             submitBtn.innerHTML = '<i class="fa-solid fa-spinner animate-spin mr-2"></i> Mengirim...';
             submitBtn.disabled = true;
 
-            setTimeout(() => {
-                document.getElementById('contact-success').classList.remove('hidden');
+            // Mengambil semua data dari kolom input
+            const formData = new FormData(form);
+            
+            // Mengirim ke Web3Forms di latar belakang (AJAX)
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // 1. Munculkan kotak sukses (warna hijau) bawaan web kamu
+                    document.getElementById('contact-success').classList.remove('hidden');
+                    
+                    // 2. KUNCI UTAMA: Menghapus/mengosongkan isi kolom secara instan saat itu juga
+                    form.reset();
+                } else {
+                    alert('Terjadi kesalahan, silakan coba lagi nanti.');
+                }
+            })
+            .catch(error => {
+                alert('Gagal mengirim pesan. Periksa koneksi internet Anda.');
+            })
+            .finally(() => {
+                // Mengembalikan tombol ke tulisan semula ("Kirim Pertanyaan")
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
-            }, 1200);
+            });
         }
 
         function resetContactForm() {
