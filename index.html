@@ -91,7 +91,7 @@
                     <a href="#beranda" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Beranda</a>
                     <a href="#prinsip" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">7 Prinsip</a>
                     <a href="#profil" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Profil &amp; Tri Bakti</a>
-                    <a href="#program" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Program Kerja</a>
+                    <a href="#program" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Event</a>
                     <a href="#anggota" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Struktur</a>
                     <a href="#kontak" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Hubungi</a>
                     <a href="#kontak" class="bg-brand-primary hover:bg-slate-800 text-white text-xs font-bold uppercase tracking-wider py-3 px-6 rounded-lg shadow-md transition-all duration-200 transform hover:-translate-y-0.5">Gabung PMR</a>
@@ -112,7 +112,7 @@
                 <a href="#beranda" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Beranda</a>
                 <a href="#prinsip" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">7 Prinsip Gerakan</a>
                 <a href="#profil" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Profil &amp; Tri Bakti</a>
-                <a href="#program" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Program Kerja</a>
+                <a href="#program" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Event</a>
                 <a href="#anggota" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Struktur Pengurus</a>
                 <a href="#kontak" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Hubungi</a>
                 <div class="pt-4 border-t border-slate-100">
@@ -385,7 +385,6 @@
                         <!-- Right: Tri Bakti PMR -->
                         <div class="lg:col-span-7 bg-slate-50 p-6 sm:p-8 rounded-2xl shadow-inner border border-slate-100 space-y-6">
                             <div class="flex items-center space-x-3">
-                                <i class="fa-solid fa-heart text-brand-accent text-3xl"></i>
                                 <h3 class="font-serif text-2xl font-bold text-brand-primary">Tri Bakti PMR</h3>
                             </div>
                             <p class="text-slate-500 text-sm">
@@ -426,7 +425,7 @@
                 <!-- Section Header -->
                 <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
                     <span class="text-xs font-bold uppercase tracking-widest text-brand-accent">Aktivitas Kami</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-primary">Program Kerja &amp; Pelatihan</h2>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-primary">Event</h2>
                     <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full"></div>
                     <p class="text-slate-500 text-sm">
                         Aktivitas kami berfokus pada pelatihan simulasi medis praktis, kesiapsiagaan sekolah, dan pengabdian masyarakat.
@@ -556,7 +555,8 @@
                 </div>
 
                 <!-- TEAM LIST GRID ( Pembina, BPH, SPAB, PENGEMAS, HUMAS, LOGISTIK ) -->
-                <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 align-top" id="team-grid">
+                <!-- Diubah menjadi grid-cols-2 agar tampil 2 kolom di HP, serta disesuaikan breakpoint md dan lg -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 align-top" id="team-grid">
                     
                     <!-- 1. PEMBINA SECTION HEADER -->
                     <div class="col-span-full division-header flex items-center bg-slate-100 border border-slate-200 rounded-xl px-5 py-4" data-role="Pembina" data-gender="all">
@@ -570,9 +570,9 @@
 
                     <!-- PEMBINA MEMBER CARD -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="Pembina" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                         <img src="https://lh3.googleusercontent.com/d/1AhGdonitf3FZC69OCd9mhnGzwwaxTHaF" alt="Saa'atin S.Pd" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-rose-100 text-brand-accent text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Pembina</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-rose-100 text-brand-accent text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider">Pembina</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                 <a href="https://www.instagram.com/saatinn_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -581,10 +581,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Saa'atin S.Pd</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Pembina PMR</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Guru Matematika & Fisika</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Saa'atin S.Pd</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Pembina PMR</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Guru Matematika & Fisika</p>
                         </div>
                     </div>
 
@@ -593,17 +593,17 @@
                         <div class="flex items-center space-x-3 flex-shrink-0">
                             <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
                             <i class="fa-solid fa-mars text-blue-800 text-lg"></i>
-                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Badan Pengurus Harian (BPH) - Putra</h3>
+                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">BPH - Putra</h3>
                         </div>
                         <div class="flex-grow h-[1px] bg-blue-200/80 ml-4"></div>
-                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
+                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
                     <!-- BPH PUTRA MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                          <img src="https://lh3.googleusercontent.com/d/1M7bno6f88vfyN2uFIEF1gLg6nN5PPgZT" alt="Ahmad Yusup Maulana" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                 <a href="https://www.instagram.com/ucupp_maull/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -612,17 +612,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Ahmad Yusup Maulana</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Ketua (Putra)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII J IPA-SOSIOLOGI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Ahmad Yusup Maulana</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Ketua (Putra)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII J IPA-SOSIOLOGI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1FvCZVkxxbdDHdOlmkbgaaZiAX3EOrFC2" alt="Muhammad Kevin Nabil" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                 <a href="https://www.instagram.com/kevinable_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -631,17 +631,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Muhammad Kevin Nabil</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Wakil Ketua BPH (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Muhammad Kevin Nabil</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Wakil Ketua BPH (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1Ja3gKTBU8qSzfsLEevn1yOhlzBfKzx8C" alt="Rizqy Shyam Maula" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/sammaula_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -650,17 +650,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Rizqy Shyam Maula</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Sekretaris BPH (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII K IPA-EKONOMI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Rizqy Shyam Maula</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Sekretaris BPH (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII K IPA-EKONOMI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1UbFvkEq82Tj1cQJkThfZXiU9pedQyNeT" alt="Hanan Abdullah Gianni Hafiz" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/hananabdullah_23/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -669,10 +669,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Hanan Abdullah Gianni Hafiz</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Bendahara BPH (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII L IPS-BIOLOGI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Hanan Abdullah Gianni</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Bendahara BPH (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII L IPS-BIOLOGI</p>
                         </div>
                     </div>
 
@@ -681,17 +681,17 @@
                         <div class="flex items-center space-x-3 flex-shrink-0">
                             <span class="w-2.5 h-2.5 rounded-full bg-rose-600 animate-pulse"></span>
                             <i class="fa-solid fa-venus text-rose-800 text-lg"></i>
-                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Badan Pengurus Harian (BPH) - Putri</h3>
+                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">BPH - Putri</h3>
                         </div>
                         <div class="flex-grow h-[1px] bg-rose-200/80 ml-4"></div>
-                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
+                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
                     <!-- BPH PUTRI MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1T_0r3k66LZucdMZ8n3LeUZHXQJq88MlS" alt="Nayyara Ramadhani Putri Irhanto" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/4yyaaaaa_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -700,17 +700,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Nayyara Ramadhani Putri Irhanto</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Ketua (Putri)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII A IPA-EKONOMI 1</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Nayyara Ramadhani P.</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Ketua (Putri)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII A IPA-EKONOMI 1</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1Y7L2kNkz7ShqSjJ2ugnUgAnuX-sF8DnU" alt="Fisti Husnaa" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/fstihsna/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -719,17 +719,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Fisti Husnaa</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Wakil Ketua BPH (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII C IPA-SOSIOLOGI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Fisti Husnaa</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Wakil Ketua BPH (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII C IPA-SOSIOLOGI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1jzNHMBIBeBWWoyFX9QhDB0wFJf57jVdW" alt="Naela Salsabila" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/naelannaa/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -738,17 +738,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Naela Salsabila Syarifah</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Sekretaris BPH (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII B IPA-EKONOMI 2</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Naela Salsabila S.</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Sekretaris BPH (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII B IPA-EKONOMI 2</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                         <img src="https://lh3.googleusercontent.com/d/1qQ6qlmtJFw7ptBLbmnRQZbM3ZaWAbF6l" alt="Aurelia Alhusni" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/aurelalhsni/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -757,17 +757,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Aurelia Alhusni</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">BENDAHARA I BPH (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII F IPS-USUL FIKIH </p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Aurelia Alhusni</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">BENDAHARA I BPH (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII F IPS-USUL FIKIH </p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1SApZQRqkaU-nnuby7z1U9N72uIkpPldr" alt="Keyla Salsabila" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/keysabiella/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -776,10 +776,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Keyla Salsabila</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">BENDAHARA II BPH (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI E IPS-BAHASA INGGRIS</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Keyla Salsabila</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">BENDAHARA II BPH (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XI E IPS-BAHASA INGGRIS</p>
                         </div>
                     </div>
 
@@ -788,17 +788,17 @@
                         <div class="flex items-center space-x-3 flex-shrink-0">
                             <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
                             <i class="fa-solid fa-mars text-blue-800 text-lg"></i>
-                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Satuan Pendidikan Aman Bencana (SPAB) - Putra</h3>
+                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">SPAB - Putra</h3>
                         </div>
                         <div class="flex-grow h-[1px] bg-blue-200/80 ml-4"></div>
-                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
+                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
                     <!-- SPAB PUTRA MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1DtUDK8Js_5W8oNsEYlme2vAJ7eR1xid-" alt="Azzukhruf Surya Aryatama" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/zor.rop_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -807,17 +807,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Azzukhruf Surya Aryatama</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. SPAB (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII L IPS-BIOLOGI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Azzukhruf Surya A.</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. SPAB (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII L IPS-BIOLOGI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/18aUoFhxL-fG--K4y_LGYxgUAXyFn0axj" alt="Mochammad Chaidar Firjallah Mubarak" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="http://instagram.com/cheedaar._/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -826,10 +826,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Mochammad Chaidar Firjallah Mubarak</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota SPAB (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII J IPA-SOSIOLOGI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Mochammad Chaidar F.</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota SPAB (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII J IPA-SOSIOLOGI</p>
                         </div>
                     </div>
 
@@ -838,17 +838,17 @@
                         <div class="flex items-center space-x-3 flex-shrink-0">
                             <span class="w-2.5 h-2.5 rounded-full bg-rose-600 animate-pulse"></span>
                             <i class="fa-solid fa-venus text-rose-800 text-lg"></i>
-                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Satuan Pendidikan Aman Bencana (SPAB) - Putri</h3>
+                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">SPAB - Putri</h3>
                         </div>
                         <div class="flex-grow h-[1px] bg-rose-200/80 ml-4"></div>
-                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
+                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
                     <!-- SPAB PUTRI MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1HhxV8oBJ6o98m9nHubFAdRAHp2Cq0YVh" alt="Abida Nur Khasanah" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/abidakhsaa/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -857,17 +857,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Abida Nur Khasanah</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. SPAB (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII E IPS-BIOLOGI 2</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Abida Nur Khasanah</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. SPAB (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII E IPS-BIOLOGI 2</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1Xuniq8ZXJKRj1xNb9K1HdjSczKye4MP3" alt="Karinda Putri Alicia" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/krindaaptrii/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -876,17 +876,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Karinda Putri Alicia</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I SPAB (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI B IPA-EKONOMI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Karinda Putri Alicia</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I SPAB (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XI B IPA-EKONOMI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1-Oq7Pjwb7Lbf9fVnjYHRl0r_QPtGZY0-" alt="Lutfiana Eka Nuraini" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/lutfi__ana2310/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -895,10 +895,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Lutfiana Eka Nuraini</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II SPAB (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI B IPA-EKONOMI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Lutfiana Eka Nuraini</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II SPAB (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XI B IPA-EKONOMI</p>
                         </div>
                     </div>
 
@@ -907,17 +907,17 @@
                         <div class="flex items-center space-x-3 flex-shrink-0">
                             <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
                             <i class="fa-solid fa-mars text-blue-800 text-lg"></i>
-                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Divisi Pengemas (PHBS & Kesehatan) - Putra</h3>
+                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Pengemas - Putra</h3>
                         </div>
                         <div class="flex-grow h-[1px] bg-blue-200/80 ml-4"></div>
-                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
+                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
                     <!-- PENGEMAS PUTRA MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1T81z8qhMdxGqOjY3lRnxf_Ut7Kb2uedP" alt="Aditia Airlagga" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/adizz_t/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -926,17 +926,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Aditia Airlagga</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Pengemas (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII K IPA-EKONOMI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Aditia Airlagga</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Pengemas (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII K IPA-EKONOMI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1Ks6u8TSEdOR_vaBND-JraRVp22WGLZNn" alt="Muhammad Zharif Zulfadhli" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/_.muzalf/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -945,17 +945,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Muhammad Zharif Zulfadhli</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Pengemas (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII K IPA-EKONOMI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Muhammad Zharif Z.</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Pengemas (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII K IPA-EKONOMI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/13Jt-G76m3quyu_yTTSMvksLBP3Rhrvrq" alt="Adhe Saputra" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/cahmumet86" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -964,10 +964,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Adhe Saputra</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Pengemas (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Adhe Saputra</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Pengemas (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XI</p>
                         </div>
                     </div>
 
@@ -976,17 +976,17 @@
                         <div class="flex items-center space-x-3 flex-shrink-0">
                             <span class="w-2.5 h-2.5 rounded-full bg-rose-600 animate-pulse"></span>
                             <i class="fa-solid fa-venus text-rose-800 text-lg"></i>
-                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Divisi Pengemas (PHBS & Kesehatan) - Putri</h3>
+                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Pengemas - Putri</h3>
                         </div>
                         <div class="flex-grow h-[1px] bg-rose-200/80 ml-4"></div>
-                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
+                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
                     <!-- PENGEMAS PUTRI MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1GV2Zwd_1-VNMQM8BRxono0GTn0D4s1vy" alt="Lala Nurmala" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/lalanrmla._/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -995,17 +995,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Lala Nurmala</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Pengemas (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII C IPA-SOSIOLOGI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Lala Nurmala</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Pengemas (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII C IPA-SOSIOLOGI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1rU-uhJ1sJuYofnltVp5Yf1QypDMLMcOa" alt="Jihan Syafi'ah Agustina" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/jiehansyaa/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1014,17 +1014,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Jihan Syafi’ah Agustina</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Pengemas (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII B IPA-EKONOMI 2</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Jihan Syafi’ah A.</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Pengemas (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII B IPA-EKONOMI 2</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1cQ33za224_tHhc35I2RV-_spWPqeCRGi" alt="Zaskya Syawaila Purnomo" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/syawailaa/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1033,17 +1033,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Zaskya Syawaila Purnomo</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Aggota II Pengemas (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI E IPS-BAHASA INGGRIS</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Zaskya Syawaila P.</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Aggota II Pengemas (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XI E IPS-BAHASA INGGRIS</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1NXLLpYVOHiTFMqKZqQYphSvQnlNw_us0" alt="Qonita Azza Mumtaaza" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/yayzaaq_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1052,10 +1052,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Qonita Azza Mumtaaza</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota III Pengemas (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI B IPA-EKONOMI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Qonita Azza M.</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota III Pengemas (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XI B IPA-EKONOMI</p>
                         </div>
                     </div>
 
@@ -1064,17 +1064,17 @@
                         <div class="flex items-center space-x-3 flex-shrink-0">
                             <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
                             <i class="fa-solid fa-mars text-blue-800 text-lg"></i>
-                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Divisi Hubungan Masyarakat (Humas) - Putra</h3>
+                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Humas - Putra</h3>
                         </div>
                         <div class="flex-grow h-[1px] bg-blue-200/80 ml-4"></div>
-                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
+                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
                     <!-- HUMAS PUTRA MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1vyhDCUOeYMgHElV0odzNvGFGmK-Hd7Ns" alt="Ahmad Yani" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/acmdyani_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1083,17 +1083,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Ahmad Yani</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Humas (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII M IPK-BIOLOGI EKONOMI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Ahmad Yani</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Humas (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII M IPK-BIOLOGI EKONOMI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1LFcFOfxV_N_6_HxWl4pJQateiQ0HoBp_" alt="Danish Haziq Rabbani" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/dnieesh._/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1102,17 +1102,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Danish Haziq Rabbani</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Humas (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII L IPS-BIOLOGI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Danish Haziq Rabbani</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Humas (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII L IPS-BIOLOGI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/132NLh7E9xuUwGdO_gf3bBGJ5Ni5uinfq" alt="Syaiful Arif" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/poelendd" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1121,10 +1121,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Syaiful Arif</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Humas (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Syaiful Arif</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Humas (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XI</p>
                         </div>
                     </div>
 
@@ -1133,17 +1133,17 @@
                         <div class="flex items-center space-x-3 flex-shrink-0">
                             <span class="w-2.5 h-2.5 rounded-full bg-rose-600 animate-pulse"></span>
                             <i class="fa-solid fa-venus text-rose-800 text-lg"></i>
-                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Divisi Hubungan Masyarakat (Humas) - Putri</h3>
+                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Humas - Putri</h3>
                         </div>
                         <div class="flex-grow h-[1px] bg-rose-200/80 ml-4"></div>
-                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
+                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
                     <!-- HUMAS PUTRI MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1vG9AdVx7qVKXga49LR2NZDnfjiuQNy1f" alt="Arha Rosyada Salsabila" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/rhslsba/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1152,17 +1152,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Arha Rosyada Salsabila</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Humas (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII G IPK</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Arha Rosyada S.</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Humas (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII G IPK</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1gjtBriOy2YwrIAkR5tJFxNTGQ1Ooh0le" alt="Aulia Putri Mislam" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/auliaaapee/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1171,17 +1171,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Aulia Putri Mislam</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Humas (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII B IPA-EKONOMI 2</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Aulia Putri Mislam</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Humas (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII B IPA-EKONOMI 2</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1WLfxkfUNZBUEScBRjfsLjF7XzQPLHFBb" alt="Lubna Sa’da Azkia" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/em.co4u/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1190,17 +1190,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Lubna Sa’da Azkia</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Humas (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI A IPA-EKONOMI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Lubna Sa’da Azkia</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Humas (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XI A IPA-EKONOMI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1BhLhP9oTG6y37zn1yisxR_UeFJmNfF1m" alt="Jazil Farischa Chusna" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/jazieell__/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1209,10 +1209,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Jazil Farischa Chusna</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota III Humas (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI E IPS-BAHASA INGGRIS</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Jazil Farischa C.</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota III Humas (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XI E IPS-BAHASA INGGRIS</p>
                         </div>
                     </div>
 
@@ -1221,17 +1221,17 @@
                         <div class="flex items-center space-x-3 flex-shrink-0">
                             <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
                             <i class="fa-solid fa-mars text-blue-800 text-lg"></i>
-                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Divisi Logistik (Sarana Prasarana) - Putra</h3>
+                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Logistik - Putra</h3>
                         </div>
                         <div class="flex-grow h-[1px] bg-blue-200/80 ml-4"></div>
-                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
+                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
                     <!-- LOGISTIK PUTRA MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1sLxk26yPedk5njk1PttD-qNolgqedge6" alt="Tedi Stefani" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/tedistevani_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1240,17 +1240,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Tedi Stefani</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Logistik (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII K IPA-EKONOMI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Tedi Stefani</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Logistik (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII K IPA-EKONOMI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1h_RLESOpsH2c3iHkYebL9nryQVyTghtr" alt="Muhammad Haikal Rizq" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/m.haikalrizq/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1259,17 +1259,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Muhammad Haikal Rizq</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Logistik (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII M IPK-BIOLOGI EKONOMI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Muhammad Haikal R.</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Logistik (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII M IPK-BIOLOGI EKONOMI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putra">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1x9BZzhc_yZ8HxoI3F1Q7hPhGzXkKPf3P" alt="Muhammad Rafif Tsaqib" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-blue-100 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-blue-100 text-blue-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-mars mr-1"></i> Putra</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/tsa_qib19/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1278,10 +1278,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Muhammad Rafif Tsaqib</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Logistik (Pa)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Muhammad Rafif T.</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Logistik (Pa)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XI</p>
                         </div>
                     </div>
 
@@ -1290,17 +1290,17 @@
                         <div class="flex items-center space-x-3 flex-shrink-0">
                             <span class="w-2.5 h-2.5 rounded-full bg-rose-600 animate-pulse"></span>
                             <i class="fa-solid fa-venus text-rose-800 text-lg"></i>
-                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Divisi Logistik (Sarana Prasarana) - Putri</h3>
+                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Logistik - Putri</h3>
                         </div>
                         <div class="flex-grow h-[1px] bg-rose-200/80 ml-4"></div>
-                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
+                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
                     <!-- LOGISTIK PUTRI MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1lYC_cvkK_Ee7zJIOytPa9Ouf6eHYYzbd" alt="Maulida Tazkya" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/justtazkiyy_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1309,17 +1309,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Maulida Tazkya</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Logistik (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII C IPA-SOSIOLOGI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Maulida Tazkya</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Kadiv. Logistik (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII C IPA-SOSIOLOGI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1PirSKk4Nz1U538SyRN0NNerEcC7lM4SW" alt="Salsa Egalita" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/egalitarian.sal_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1328,17 +1328,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Salsa Egalita</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Logistik (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XII A IPA-EKONOMI 1</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Salsa Egalita</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota I Logistik (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XII A IPA-EKONOMI 1</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1j1tQ_cC98cy7ysGChkgBQMBNX6OIA6HF" alt="Nagisa Arum" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/nnagisaa_/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1347,17 +1347,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Nagisa Arum</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Logistik (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI D IPS-BIOLOGI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Nagisa Arum</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota II Logistik (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XI D IPS-BIOLOGI</p>
                         </div>
                     </div>
 
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putri">
-                        <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="h-40 sm:h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/19ShAUw3G1VevsZW1Jf9Mv9ftk2gqw78r" alt="Adinda Adzra Firamadhani" class="w-full h-full object-cover">
-                            <span class="absolute top-3 right-3 bg-pink-100 text-pink-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
+                            <span class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-pink-100 text-pink-700 text-[8px] sm:text-[10px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full uppercase tracking-wider"><i class="fa-solid fa-venus mr-1"></i> Putri</span>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                                 <div class="flex space-x-3 text-white">
                                     <a href="https://www.instagram.com/adzra.fidewaz/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent">
@@ -1366,10 +1366,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-bold text-brand-primary text-lg font-serif">Adinda Adzra Firamadhani</h3>
-                            <p class="text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota III Logistik (Pi)</p>
-                            <p class="text-xs text-slate-400 mt-2 italic">Kelas XI C IPA-EKONOMI</p>
+                        <div class="p-3 sm:p-5 text-center">
+                            <h3 class="font-bold text-brand-primary text-sm sm:text-lg font-serif">Adinda Adzra F.</h3>
+                            <p class="text-[10px] sm:text-xs text-brand-accent font-semibold tracking-wider uppercase mt-1">Anggota III Logistik (Pi)</p>
+                            <p class="text-[10px] sm:text-xs text-slate-400 mt-1 sm:mt-2 italic">Kelas XI C IPA-EKONOMI</p>
                         </div>
                     </div>
 
@@ -1399,7 +1399,7 @@
                             <i id="faq-icon-1" class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-200"></i>
                         </button>
                         <div id="faq-ans-1" class="hidden px-6 pb-5 pt-2 text-slate-600 text-sm border-t border-slate-200">
-                            PMR Wira diperuntukkan bagi seluruh siswa MA Sunan Pandanaran aktif kelas X dan XI yang memiliki minat dan kemauan sosial tinggi untuk mengabdi di bidang kemanusiaan dan kesehatan.
+                            PMR Wira diperuntukkan bagi seluruh siswa MA Sunan Pandanaran aktif kelas X and XI yang memiliki minat dan kemauan sosial tinggi untuk mengabdi di bidang kemanusiaan dan kesehatan.
                         </div>
                     </div>
 
