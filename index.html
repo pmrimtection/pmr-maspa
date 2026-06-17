@@ -72,7 +72,7 @@
                     <!-- Updated Logo Container with Fallback -->
                     <div class="relative w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-md overflow-hidden border border-slate-150 p-1">
                         <img id="header-logo" 
-                            src="https://lh3.googleusercontent.com/d/10hbhtIaLgXchVz9K-MGpbJzWFJMpas6P" 
+                            src="https://lh3.googleusercontent.com/d/1_LiJcyWIMI9JPlkfPN9r-g69Ikr7tv1_" 
                             alt="Logo PMR Wira MASPA" 
                             class="w-full h-full object-contain"
                             onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/d/10hbhtIaLgXchVz9K-MGpbJzWFJMpas6P'; this.onerror=function(){ this.style.display='none'; document.getElementById('header-logo-fallback').classList.remove('hidden'); };" />
@@ -147,8 +147,8 @@
                             <span>Impact · Protect · Action</span>
                         </div>
                         <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
-                            Selamat Datang <br>
-                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-200 via-rose-300 to-rose-500">di Website Resmi PMR Wira MA Sunan Pandanaran</span>
+                            Mewujudkan Karakter <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-200 via-rose-300 to-rose-500">Relawan Muda Berjiwa Simpati, Empati, dan Toleransi</span>
                         </h1>
                         <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0">
                             Organisasi pembinaan remaja Palang Merah Indonesia dalam mengasah karakter remaja dengan sikap menjaga, melindungi, dan mempengaruhi antar sesama.
@@ -556,18 +556,19 @@
                 </div>
 
                 <!-- TEAM LIST GRID ( Pembina, BPH, SPAB, PENGEMAS, HUMAS, LOGISTIK ) -->
-                <div class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8" id="team-grid">
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 align-top" id="team-grid">
                     
-                    <!-- TAG PEMBINA -->
-                    <div class="col-span-full mt-4 mb-2 division-header" data-header-role="Pembina" data-header-gender="putri">
-                        <div class="flex items-center space-x-3 bg-slate-100/90 p-3.5 rounded-xl border border-slate-200 shadow-sm">
-                            <span class="w-2.5 h-2.5 rounded-full bg-brand-accent"></span>
-                            <span class="text-xs font-extrabold text-brand-primary uppercase tracking-widest"><i class="fa-solid fa-graduation-cap mr-1.5"></i>Pembina PMR</span>
-                            <div class="h-[1px] bg-slate-300 flex-grow"></div>
+                    <!-- 1. PEMBINA SECTION HEADER -->
+                    <div class="col-span-full division-header flex items-center bg-slate-100 border border-slate-200 rounded-xl px-5 py-4" data-role="Pembina" data-gender="all">
+                        <div class="flex items-center space-x-3 flex-shrink-0">
+                            <span class="w-2.5 h-2.5 rounded-full bg-slate-500"></span>
+                            <i class="fa-solid fa-graduation-cap text-slate-700 text-lg"></i>
+                            <h3 class="font-bold text-slate-800 text-xs sm:text-sm tracking-wider uppercase font-sans">Pembina PMR Wira</h3>
                         </div>
+                        <div class="flex-grow h-[1px] bg-slate-200 ml-4"></div>
                     </div>
 
-                    <!-- 1. PEMBINA (1 Orang) -->
+                    <!-- PEMBINA MEMBER CARD -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="Pembina" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                         <img src="https://lh3.googleusercontent.com/d/1AhGdonitf3FZC69OCd9mhnGzwwaxTHaF" alt="Saa'atin S.Pd" class="w-full h-full object-cover">
@@ -587,16 +588,18 @@
                         </div>
                     </div>
 
-                    <!-- TAG BPH PUTRA -->
-                    <div class="col-span-full mt-6 mb-2 division-header" data-header-role="BPH" data-header-gender="putra">
-                        <div class="flex items-center space-x-3 bg-blue-50/70 p-3.5 rounded-xl border border-blue-100 shadow-sm">
-                            <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
-                            <span class="text-xs font-extrabold text-blue-900 uppercase tracking-widest"><i class="fa-solid fa-mars mr-1.5"></i> Badan Pengurus Harian (BPH) - Putra</span>
-                            <div class="h-[1px] bg-blue-200 flex-grow"></div>
+                    <!-- 2. BPH PUTRA SECTION HEADER -->
+                    <div class="col-span-full division-header flex items-center bg-blue-50/70 border border-blue-100 hover:bg-blue-100/40 hover:border-blue-300 transition-all duration-200 rounded-xl px-5 py-4 cursor-pointer group/header shadow-sm" data-role="BPH" data-gender="putra" onclick="openDivisionModal('BPH')">
+                        <div class="flex items-center space-x-3 flex-shrink-0">
+                            <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
+                            <i class="fa-solid fa-mars text-blue-800 text-lg"></i>
+                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Badan Pengurus Harian (BPH) - Putra</h3>
                         </div>
+                        <div class="flex-grow h-[1px] bg-blue-200/80 ml-4"></div>
+                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
-                    <!-- 2. BPH - KETUA PUTRA -->
+                    <!-- BPH PUTRA MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                          <img src="https://lh3.googleusercontent.com/d/1M7bno6f88vfyN2uFIEF1gLg6nN5PPgZT" alt="Ahmad Yusup Maulana" class="w-full h-full object-cover">
@@ -616,7 +619,6 @@
                         </div>
                     </div>
 
-                    <!-- 3. BPH - WAKIL KETUA PUTRA -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1FvCZVkxxbdDHdOlmkbgaaZiAX3EOrFC2" alt="Muhammad Kevin Nabil" class="w-full h-full object-cover">
@@ -636,7 +638,6 @@
                         </div>
                     </div>
 
-                    <!-- 4. BPH - SEKRETARIS PUTRA -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1Ja3gKTBU8qSzfsLEevn1yOhlzBfKzx8C" alt="Rizqy Shyam Maula" class="w-full h-full object-cover">
@@ -656,7 +657,6 @@
                         </div>
                     </div>
 
-                    <!-- 5. BPH - BENDAHARA PUTRA -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1UbFvkEq82Tj1cQJkThfZXiU9pedQyNeT" alt="Hanan Abdullah Gianni Hafiz" class="w-full h-full object-cover">
@@ -676,16 +676,18 @@
                         </div>
                     </div>
 
-                    <!-- TAG BPH PUTRI -->
-                    <div class="col-span-full mt-6 mb-2 division-header" data-header-role="BPH" data-header-gender="putri">
-                        <div class="flex items-center space-x-3 bg-pink-50/70 p-3.5 rounded-xl border border-pink-100 shadow-sm">
-                            <span class="w-2.5 h-2.5 rounded-full bg-pink-500"></span>
-                            <span class="text-xs font-extrabold text-pink-900 uppercase tracking-widest"><i class="fa-solid fa-venus mr-1.5"></i> Badan Pengurus Harian (BPH) - Putri</span>
-                            <div class="h-[1px] bg-pink-200 flex-grow"></div>
+                    <!-- 3. BPH PUTRI SECTION HEADER -->
+                    <div class="col-span-full division-header flex items-center bg-rose-50/70 border border-rose-100 hover:bg-rose-100/40 hover:border-rose-300 transition-all duration-200 rounded-xl px-5 py-4 cursor-pointer group/header shadow-sm" data-role="BPH" data-gender="putri" onclick="openDivisionModal('BPH')">
+                        <div class="flex items-center space-x-3 flex-shrink-0">
+                            <span class="w-2.5 h-2.5 rounded-full bg-rose-600 animate-pulse"></span>
+                            <i class="fa-solid fa-venus text-rose-800 text-lg"></i>
+                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Badan Pengurus Harian (BPH) - Putri</h3>
                         </div>
+                        <div class="flex-grow h-[1px] bg-rose-200/80 ml-4"></div>
+                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
-                    <!-- 6. BPH - KETUA PUTRI -->
+                    <!-- BPH PUTRI MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1T_0r3k66LZucdMZ8n3LeUZHXQJq88MlS" alt="Nayyara Ramadhani Putri Irhanto" class="w-full h-full object-cover">
@@ -705,7 +707,6 @@
                         </div>
                     </div>
 
-                    <!-- 7. BPH - WAKIL KETUA PUTRI -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1Y7L2kNkz7ShqSjJ2ugnUgAnuX-sF8DnU" alt="Fisti Husnaa" class="w-full h-full object-cover">
@@ -725,7 +726,6 @@
                         </div>
                     </div>
 
-                    <!-- 8. BPH - SEKRETARIS PUTRI -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1jzNHMBIBeBWWoyFX9QhDB0wFJf57jVdW" alt="Naela Salsabila" class="w-full h-full object-cover">
@@ -745,7 +745,6 @@
                         </div>
                     </div>
 
-                    <!-- 9. BPH - BENDAHARA I PUTRI -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                         <img src="https://lh3.googleusercontent.com/d/1qQ6qlmtJFw7ptBLbmnRQZbM3ZaWAbF6l" alt="Aurelia Alhusni" class="w-full h-full object-cover">
@@ -765,7 +764,6 @@
                         </div>
                     </div>
 
-                    <!-- 10. BPH - BENDAHARA II PUTRI -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="BPH" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1SApZQRqkaU-nnuby7z1U9N72uIkpPldr" alt="Keyla Salsabila" class="w-full h-full object-cover">
@@ -785,17 +783,18 @@
                         </div>
                     </div>
 
-                    <!-- TAG SPAB PUTRA -->
-                    <div class="col-span-full mt-6 mb-2 division-header" data-header-role="SPAB" data-header-gender="putra">
-                        <div class="flex items-center space-x-3 bg-slate-100/90 p-3.5 rounded-xl border border-slate-200 shadow-sm">
-                            <span class="w-2.5 h-2.5 rounded-full bg-brand-accent"></span>
-                            <span class="text-xs font-extrabold text-brand-primary uppercase tracking-widest"><i class="fa-solid fa-shield-halved mr-1.5"></i> Divisi SPAB (Satuan Pendidikan Aman Bencana) - Putra</span>
-                            <div class="h-[1px] bg-slate-300 flex-grow"></div>
+                    <!-- 4. SPAB PUTRA SECTION HEADER -->
+                    <div class="col-span-full division-header flex items-center bg-blue-50/70 border border-blue-100 hover:bg-blue-100/40 hover:border-blue-300 transition-all duration-200 rounded-xl px-5 py-4 cursor-pointer group/header shadow-sm" data-role="SPAB" data-gender="putra" onclick="openDivisionModal('SPAB')">
+                        <div class="flex items-center space-x-3 flex-shrink-0">
+                            <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
+                            <i class="fa-solid fa-mars text-blue-800 text-lg"></i>
+                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Satuan Pendidikan Aman Bencana (SPAB) - Putra</h3>
                         </div>
+                        <div class="flex-grow h-[1px] bg-blue-200/80 ml-4"></div>
+                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
-
-                    <!-- 6. SPAB - KADIV. PUTRA -->
+                    <!-- SPAB PUTRA MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1DtUDK8Js_5W8oNsEYlme2vAJ7eR1xid-" alt="Azzukhruf Surya Aryatama" class="w-full h-full object-cover">
@@ -815,7 +814,6 @@
                         </div>
                     </div>
 
-                    <!-- 6. SPAB - ANGGOTA PUTRA -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/18aUoFhxL-fG--K4y_LGYxgUAXyFn0axj" alt="Mochammad Chaidar Firjallah Mubarak" class="w-full h-full object-cover">
@@ -835,17 +833,18 @@
                         </div>
                     </div>
 
-                    <!-- TAG SPAB PUTRI -->
-                    <div class="col-span-full mt-6 mb-2 division-header" data-header-role="SPAB" data-header-gender="putri">
-                        <div class="flex items-center space-x-3 bg-slate-100/90 p-3.5 rounded-xl border border-slate-200 shadow-sm">
-                            <span class="w-2.5 h-2.5 rounded-full bg-brand-accent"></span>
-                            <span class="text-xs font-extrabold text-brand-primary uppercase tracking-widest"><i class="fa-solid fa-shield-halved mr-1.5"></i> Divisi SPAB (Satuan Pendidikan Aman Bencana) - Putri</span>
-                            <div class="h-[1px] bg-slate-300 flex-grow"></div>
+                    <!-- 5. SPAB PUTRI SECTION HEADER -->
+                    <div class="col-span-full division-header flex items-center bg-rose-50/70 border border-rose-100 hover:bg-rose-100/40 hover:border-rose-300 transition-all duration-200 rounded-xl px-5 py-4 cursor-pointer group/header shadow-sm" data-role="SPAB" data-gender="putri" onclick="openDivisionModal('SPAB')">
+                        <div class="flex items-center space-x-3 flex-shrink-0">
+                            <span class="w-2.5 h-2.5 rounded-full bg-rose-600 animate-pulse"></span>
+                            <i class="fa-solid fa-venus text-rose-800 text-lg"></i>
+                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Satuan Pendidikan Aman Bencana (SPAB) - Putri</h3>
                         </div>
+                        <div class="flex-grow h-[1px] bg-rose-200/80 ml-4"></div>
+                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
-
-                    <!-- 7. SPAB - KADIV. PUTRI -->
+                    <!-- SPAB PUTRI MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1HhxV8oBJ6o98m9nHubFAdRAHp2Cq0YVh" alt="Abida Nur Khasanah" class="w-full h-full object-cover">
@@ -865,7 +864,6 @@
                         </div>
                     </div>
 
-                    <!-- 7. SPAB - ANGGOTA I -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1Xuniq8ZXJKRj1xNb9K1HdjSczKye4MP3" alt="Karinda Putri Alicia" class="w-full h-full object-cover">
@@ -885,7 +883,6 @@
                         </div>
                     </div>
 
-                    <!-- 7. SPAB - ANGGOTA II -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="SPAB" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1-Oq7Pjwb7Lbf9fVnjYHRl0r_QPtGZY0-" alt="Lutfiana Eka Nuraini" class="w-full h-full object-cover">
@@ -905,16 +902,18 @@
                         </div>
                     </div>
 
-                    <!-- TAG PENGEMAS PUTRA -->
-                    <div class="col-span-full mt-6 mb-2 division-header" data-header-role="PENGEMAS" data-header-gender="putra">
-                        <div class="flex items-center space-x-3 bg-slate-100/90 p-3.5 rounded-xl border border-slate-200 shadow-sm">
-                            <span class="w-2.5 h-2.5 rounded-full bg-brand-accent"></span>
-                            <span class="text-xs font-extrabold text-brand-primary uppercase tracking-widest"><i class="fa-solid fa-hand-holding-heart mr-1.5"></i> Divisi Pengemas (Pengabdian Masyarakat) - Putra</span>
-                            <div class="h-[1px] bg-slate-300 flex-grow"></div>
+                    <!-- 6. PENGEMAS PUTRA SECTION HEADER -->
+                    <div class="col-span-full division-header flex items-center bg-blue-50/70 border border-blue-100 hover:bg-blue-100/40 hover:border-blue-300 transition-all duration-200 rounded-xl px-5 py-4 cursor-pointer group/header shadow-sm" data-role="PENGEMAS" data-gender="putra" onclick="openDivisionModal('PENGEMAS')">
+                        <div class="flex items-center space-x-3 flex-shrink-0">
+                            <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
+                            <i class="fa-solid fa-mars text-blue-800 text-lg"></i>
+                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Divisi Pengemas (PHBS & Kesehatan) - Putra</h3>
                         </div>
+                        <div class="flex-grow h-[1px] bg-blue-200/80 ml-4"></div>
+                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
-                    <!-- 8. PENGEMAS - KADIV. PUTRA -->
+                    <!-- PENGEMAS PUTRA MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1T81z8qhMdxGqOjY3lRnxf_Ut7Kb2uedP" alt="Aditia Airlagga" class="w-full h-full object-cover">
@@ -934,7 +933,6 @@
                         </div>
                     </div>
 
-                    <!-- 8. PENGEMAS - ANGGOTA I PUTRA -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1Ks6u8TSEdOR_vaBND-JraRVp22WGLZNn" alt="Muhammad Zharif Zulfadhli" class="w-full h-full object-cover">
@@ -954,7 +952,6 @@
                         </div>
                     </div>
 
-                    <!-- 8. PENGEMAS - ANGGOTA II PUTRA -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/13Jt-G76m3quyu_yTTSMvksLBP3Rhrvrq" alt="Adhe Saputra" class="w-full h-full object-cover">
@@ -974,16 +971,18 @@
                         </div>
                     </div>
 
-                    <!-- TAG PENGEMAS PUTRI -->
-                    <div class="col-span-full mt-6 mb-2 division-header" data-header-role="PENGEMAS" data-header-gender="putri">
-                        <div class="flex items-center space-x-3 bg-slate-100/90 p-3.5 rounded-xl border border-slate-200 shadow-sm">
-                            <span class="w-2.5 h-2.5 rounded-full bg-brand-accent"></span>
-                            <span class="text-xs font-extrabold text-brand-primary uppercase tracking-widest"><i class="fa-solid fa-hand-holding-heart mr-1.5"></i> Divisi Pengemas (Pengabdian Masyarakat) - Putri</span>
-                            <div class="h-[1px] bg-slate-300 flex-grow"></div>
+                    <!-- 7. PENGEMAS PUTRI SECTION HEADER -->
+                    <div class="col-span-full division-header flex items-center bg-rose-50/70 border border-rose-100 hover:bg-rose-100/40 hover:border-rose-300 transition-all duration-200 rounded-xl px-5 py-4 cursor-pointer group/header shadow-sm" data-role="PENGEMAS" data-gender="putri" onclick="openDivisionModal('PENGEMAS')">
+                        <div class="flex items-center space-x-3 flex-shrink-0">
+                            <span class="w-2.5 h-2.5 rounded-full bg-rose-600 animate-pulse"></span>
+                            <i class="fa-solid fa-venus text-rose-800 text-lg"></i>
+                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Divisi Pengemas (PHBS & Kesehatan) - Putri</h3>
                         </div>
+                        <div class="flex-grow h-[1px] bg-rose-200/80 ml-4"></div>
+                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
-                    <!-- 9. PENGEMAS - KADIV. PUTRI -->
+                    <!-- PENGEMAS PUTRI MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1GV2Zwd_1-VNMQM8BRxono0GTn0D4s1vy" alt="Lala Nurmala" class="w-full h-full object-cover">
@@ -1003,7 +1002,6 @@
                         </div>
                     </div>
 
-                    <!-- 9. PENGEMAS - ANGGOTA I PUTRI -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1rU-uhJ1sJuYofnltVp5Yf1QypDMLMcOa" alt="Jihan Syafi'ah Agustina" class="w-full h-full object-cover">
@@ -1023,7 +1021,6 @@
                         </div>
                     </div>
 
-                    <!-- 9. PENGEMAS - ANGGOTA II PUTRI -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1cQ33za224_tHhc35I2RV-_spWPqeCRGi" alt="Zaskya Syawaila Purnomo" class="w-full h-full object-cover">
@@ -1043,7 +1040,6 @@
                         </div>
                     </div>
 
-                    <!-- 9. PENGEMAS - ANGGOTA III PUTRI -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="PENGEMAS" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1NXLLpYVOHiTFMqKZqQYphSvQnlNw_us0" alt="Qonita Azza Mumtaaza" class="w-full h-full object-cover">
@@ -1063,17 +1059,18 @@
                         </div>
                     </div>
 
-                    <!-- TAG HUMAS PUTRA -->
-                    <div class="col-span-full mt-6 mb-2 division-header" data-header-role="HUMAS" data-header-gender="putra">
-                        <div class="flex items-center space-x-3 bg-slate-100/90 p-3.5 rounded-xl border border-slate-200 shadow-sm">
-                            <span class="w-2.5 h-2.5 rounded-full bg-brand-accent"></span>
-                            <span class="text-xs font-extrabold text-brand-primary uppercase tracking-widest"><i class="fa-solid fa-bullhorn mr-1.5"></i> Divisi Humas (Hubungan Masyarakat) - Putra</span>
-                            <div class="h-[1px] bg-slate-300 flex-grow"></div>
+                    <!-- 8. HUMAS PUTRA SECTION HEADER -->
+                    <div class="col-span-full division-header flex items-center bg-blue-50/70 border border-blue-100 hover:bg-blue-100/40 hover:border-blue-300 transition-all duration-200 rounded-xl px-5 py-4 cursor-pointer group/header shadow-sm" data-role="HUMAS" data-gender="putra" onclick="openDivisionModal('HUMAS')">
+                        <div class="flex items-center space-x-3 flex-shrink-0">
+                            <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
+                            <i class="fa-solid fa-mars text-blue-800 text-lg"></i>
+                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Divisi Hubungan Masyarakat (Humas) - Putra</h3>
                         </div>
+                        <div class="flex-grow h-[1px] bg-blue-200/80 ml-4"></div>
+                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
-
-                    <!-- 10. HUMAS - KADIV. PUTRA -->
+                    <!-- HUMAS PUTRA MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1vyhDCUOeYMgHElV0odzNvGFGmK-Hd7Ns" alt="Ahmad Yani" class="w-full h-full object-cover">
@@ -1093,7 +1090,6 @@
                         </div>
                     </div>
 
-                    <!-- 10. HUMAS - ANGGOTA I PUTRA -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1LFcFOfxV_N_6_HxWl4pJQateiQ0HoBp_" alt="Danish Haziq Rabbani" class="w-full h-full object-cover">
@@ -1113,7 +1109,6 @@
                         </div>
                     </div>
 
-                    <!-- 10. HUMAS - ANGGOTA II PUTRA -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/132NLh7E9xuUwGdO_gf3bBGJ5Ni5uinfq" alt="Syaiful Arif" class="w-full h-full object-cover">
@@ -1133,16 +1128,18 @@
                         </div>
                     </div>
 
-                    <!-- TAG HUMAS PUTRI -->
-                    <div class="col-span-full mt-6 mb-2 division-header" data-header-role="HUMAS" data-header-gender="putri">
-                        <div class="flex items-center space-x-3 bg-slate-100/90 p-3.5 rounded-xl border border-slate-200 shadow-sm">
-                            <span class="w-2.5 h-2.5 rounded-full bg-brand-accent"></span>
-                            <span class="text-xs font-extrabold text-brand-primary uppercase tracking-widest"><i class="fa-solid fa-bullhorn mr-1.5"></i> Divisi Humas (Hubungan Masyarakat) - Putri</span>
-                            <div class="h-[1px] bg-slate-300 flex-grow"></div>
+                    <!-- 9. HUMAS PUTRI SECTION HEADER -->
+                    <div class="col-span-full division-header flex items-center bg-rose-50/70 border border-rose-100 hover:bg-rose-100/40 hover:border-rose-300 transition-all duration-200 rounded-xl px-5 py-4 cursor-pointer group/header shadow-sm" data-role="HUMAS" data-gender="putri" onclick="openDivisionModal('HUMAS')">
+                        <div class="flex items-center space-x-3 flex-shrink-0">
+                            <span class="w-2.5 h-2.5 rounded-full bg-rose-600 animate-pulse"></span>
+                            <i class="fa-solid fa-venus text-rose-800 text-lg"></i>
+                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Divisi Hubungan Masyarakat (Humas) - Putri</h3>
                         </div>
+                        <div class="flex-grow h-[1px] bg-rose-200/80 ml-4"></div>
+                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
-                    <!-- 11. HUMAS - KADIV. PUTRI -->
+                    <!-- HUMAS PUTRI MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1vG9AdVx7qVKXga49LR2NZDnfjiuQNy1f" alt="Arha Rosyada Salsabila" class="w-full h-full object-cover">
@@ -1162,7 +1159,6 @@
                         </div>
                     </div>
 
-                    <!-- 11. HUMAS - ANGGOTA I PUTRI -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1gjtBriOy2YwrIAkR5tJFxNTGQ1Ooh0le" alt="Aulia Putri Mislam" class="w-full h-full object-cover">
@@ -1182,7 +1178,6 @@
                         </div>
                     </div>
 
-                    <!-- 11. HUMAS - ANGGOTA II PUTRI -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1WLfxkfUNZBUEScBRjfsLjF7XzQPLHFBb" alt="Lubna Sa’da Azkia" class="w-full h-full object-cover">
@@ -1202,7 +1197,6 @@
                         </div>
                     </div>
 
-                    <!-- 11. HUMAS - ANGGOTA III PUTRI -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="HUMAS" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1BhLhP9oTG6y37zn1yisxR_UeFJmNfF1m" alt="Jazil Farischa Chusna" class="w-full h-full object-cover">
@@ -1222,16 +1216,18 @@
                         </div>
                     </div>
 
-                    <!-- TAG LOGISTIK PUTRA -->
-                    <div class="col-span-full mt-6 mb-2 division-header" data-header-role="LOGISTIK" data-header-gender="putra">
-                        <div class="flex items-center space-x-3 bg-slate-100/90 p-3.5 rounded-xl border border-slate-200 shadow-sm">
-                            <span class="w-2.5 h-2.5 rounded-full bg-brand-accent"></span>
-                            <span class="text-xs font-extrabold text-brand-primary uppercase tracking-widest"><i class="fa-solid fa-boxes-stacked mr-1.5"></i> Divisi Logistik (Peralatan & Perlengkapan) - Putra</span>
-                            <div class="h-[1px] bg-slate-300 flex-grow"></div>
+                    <!-- 10. LOGISTIK PUTRA SECTION HEADER -->
+                    <div class="col-span-full division-header flex items-center bg-blue-50/70 border border-blue-100 hover:bg-blue-100/40 hover:border-blue-300 transition-all duration-200 rounded-xl px-5 py-4 cursor-pointer group/header shadow-sm" data-role="LOGISTIK" data-gender="putra" onclick="openDivisionModal('LOGISTIK')">
+                        <div class="flex items-center space-x-3 flex-shrink-0">
+                            <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
+                            <i class="fa-solid fa-mars text-blue-800 text-lg"></i>
+                            <h3 class="font-bold text-blue-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Divisi Logistik (Sarana Prasarana) - Putra</h3>
                         </div>
+                        <div class="flex-grow h-[1px] bg-blue-200/80 ml-4"></div>
+                        <span class="text-[10px] font-bold text-blue-600 uppercase ml-2 group-hover/header:text-blue-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
-                    <!-- 12. LOGISTIK - KADIV. PUTRA -->
+                    <!-- LOGISTIK PUTRA MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1sLxk26yPedk5njk1PttD-qNolgqedge6" alt="Tedi Stefani" class="w-full h-full object-cover">
@@ -1251,7 +1247,6 @@
                         </div>
                     </div>
 
-                    <!-- 12. LOGISTIK - ANGGOTA I PUTRA -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1h_RLESOpsH2c3iHkYebL9nryQVyTghtr" alt="Muhammad Haikal Rizq" class="w-full h-full object-cover">
@@ -1271,7 +1266,6 @@
                         </div>
                     </div>
 
-                    <!-- 12. LOGISTIK - ANGGOTA II PUTRA -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putra">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1x9BZzhc_yZ8HxoI3F1Q7hPhGzXkKPf3P" alt="Muhammad Rafif Tsaqib" class="w-full h-full object-cover">
@@ -1291,17 +1285,18 @@
                         </div>
                     </div>
 
-                    <!-- TAG LOGISTIK PUTRI -->
-                    <div class="col-span-full mt-6 mb-2 division-header" data-header-role="LOGISTIK" data-header-gender="putri">
-                        <div class="flex items-center space-x-3 bg-slate-100/90 p-3.5 rounded-xl border border-slate-200 shadow-sm">
-                            <span class="w-2.5 h-2.5 rounded-full bg-brand-accent"></span>
-                            <span class="text-xs font-extrabold text-brand-primary uppercase tracking-widest"><i class="fa-solid fa-boxes-stacked mr-1.5"></i> Divisi Logistik (Peralatan & Perlengkapan) - Putri</span>
-                            <div class="h-[1px] bg-slate-300 flex-grow"></div>
+                    <!-- 11. LOGISTIK PUTRI SECTION HEADER -->
+                    <div class="col-span-full division-header flex items-center bg-rose-50/70 border border-rose-100 hover:bg-rose-100/40 hover:border-rose-300 transition-all duration-200 rounded-xl px-5 py-4 cursor-pointer group/header shadow-sm" data-role="LOGISTIK" data-gender="putri" onclick="openDivisionModal('LOGISTIK')">
+                        <div class="flex items-center space-x-3 flex-shrink-0">
+                            <span class="w-2.5 h-2.5 rounded-full bg-rose-600 animate-pulse"></span>
+                            <i class="fa-solid fa-venus text-rose-800 text-lg"></i>
+                            <h3 class="font-bold text-rose-950 text-xs sm:text-sm tracking-wider uppercase font-sans">Divisi Logistik (Sarana Prasarana) - Putri</h3>
                         </div>
+                        <div class="flex-grow h-[1px] bg-rose-200/80 ml-4"></div>
+                        <span class="text-[10px] font-bold text-rose-600 uppercase ml-2 group-hover/header:text-rose-800 transition flex items-center gap-1">Detail Divisi <i class="fa-solid fa-circle-info"></i></span>
                     </div>
 
-
-                    <!-- 13. LOGISTIK - KADIV. PUTRI -->
+                    <!-- LOGISTIK PUTRI MEMBERS -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1lYC_cvkK_Ee7zJIOytPa9Ouf6eHYYzbd" alt="Maulida Tazkya" class="w-full h-full object-cover">
@@ -1321,7 +1316,6 @@
                         </div>
                     </div>
 
-                    <!-- 13. LOGISTIK - ANGGOTA I PUTRI -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1PirSKk4Nz1U538SyRN0NNerEcC7lM4SW" alt="Salsa Egalita" class="w-full h-full object-cover">
@@ -1341,7 +1335,6 @@
                         </div>
                     </div>
 
-                    <!-- 13. LOGISTIK - ANGGOTA II PUTRI -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1j1tQ_cC98cy7ysGChkgBQMBNX6OIA6HF" alt="Nagisa Arum" class="w-full h-full object-cover">
@@ -1361,7 +1354,6 @@
                         </div>
                     </div>
 
-                    <!-- 13. LOGISTIK - ANGGOTA III PUTRI -->
                     <div class="team-card bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-lg transition-all duration-300 group" data-role="LOGISTIK" data-gender="putri">
                         <div class="h-64 bg-slate-100 relative flex items-center justify-center overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/19ShAUw3G1VevsZW1Jf9Mv9ftk2gqw78r" alt="Adinda Adzra Firamadhani" class="w-full h-full object-cover">
@@ -1542,7 +1534,7 @@
     <!-- FOOTER -->
     <footer class="bg-brand-primary text-slate-400 pt-16 pb-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
                 <!-- Brand Info -->
                 <div class="space-y-4">
                     <div class="flex items-center space-x-3">
@@ -1591,20 +1583,6 @@
                         <li>7. Kesemestaan</li>
                     </ul>
                 </div>
-
-                <!-- Newsletter -->
-                <div class="space-y-4">
-                    <h4 class="text-white font-bold text-sm tracking-wider uppercase mb-6">Langganan Mading Digital</h4>
-                    <p class="text-sm">
-                        Dapatkan buletin kesehatan, tips pertolongan pertama dasar, dan jadwal kegiatan PMR langsung ke emailmu.
-                    </p>
-                    <form onsubmit="event.preventDefault(); document.getElementById('newsletter-input').value=''; openProgramModal('Mading Digital', 'Terima kasih! Kamu telah terdaftar untuk menerima berita bulanan PMR Wira MA Sunan Pandanaran langsung melalui surat elektronik.', '#')" class="flex">
-                        <input type="email" id="newsletter-input" required placeholder="Email aktifmu..." class="w-full px-4 py-2.5 bg-slate-800 border border-slate-700 rounded-l-lg text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-brand-accent">
-                        <button type="submit" class="bg-brand-accent hover:bg-brand-800 text-white px-4 rounded-r-lg flex items-center justify-center transition">
-                            <i class="fa-solid fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
             </div>
 
             <div class="pt-8 border-t border-slate-800/80 text-center md:flex md:justify-between md:items-center text-xs">
@@ -1639,6 +1617,44 @@
                 <div class="pt-4 border-t border-slate-100 flex justify-end">
                     <button onclick="closeProgramModal()" class="bg-brand-primary text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-xl hover:bg-brand-primary/95 transition">
                         Tutup Jendela
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INTERACTIVE DIVISION MODAL -->
+    <div id="division-modal" class="hidden fixed inset-0 z-[100] bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-100 transform transition-all scale-95 duration-300">
+            <div class="p-6 sm:p-8 space-y-5">
+                <div class="flex justify-between items-center">
+                    <span class="text-xs font-bold text-brand-accent uppercase tracking-wider">Informasi Divisi PMR Wira</span>
+                    <button onclick="closeDivisionModal()" class="text-slate-400 hover:text-slate-600 focus:outline-none">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+                <div>
+                    <h3 id="div-modal-title" class="font-serif text-2xl font-bold text-brand-primary">Nama Divisi</h3>
+                    <div class="w-12 h-1 bg-brand-accent rounded-full mt-2"></div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Deskripsi Divisi</h4>
+                        <p id="div-modal-desc" class="text-slate-600 text-sm leading-relaxed"></p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Program Kerja &amp; Tanggung Jawab</h4>
+                        <ul id="div-modal-proker" class="space-y-2 text-sm text-slate-600">
+                            <!-- List items dynamically generated -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-100 flex justify-end">
+                    <button onclick="closeDivisionModal()" class="bg-brand-primary text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-xl hover:bg-brand-primary/95 transition">
+                        Tutup
                     </button>
                 </div>
             </div>
@@ -1746,46 +1762,149 @@
 
         // APPLY FILTERS CONCURRENTLY
         function applyBothFilters() {
+            const searchQuery = document.getElementById('search-member').value.toLowerCase();
             const cards = document.querySelectorAll('.team-card');
+            const headers = document.querySelectorAll('.division-header');
 
+            // Track visible groups to dynamically hide empty headers
+            const visibleGroups = new Set();
+
+            // 1. Process Cards
             cards.forEach(card => {
+                const name = card.querySelector('h3').innerText.toLowerCase();
+                const title = card.querySelector('p').innerText.toLowerCase();
                 const cardRole = card.getAttribute('data-role');
                 const cardGender = card.getAttribute('data-gender');
 
                 const matchesRole = (activeRole === 'all' || cardRole === activeRole);
                 const matchesGender = (activeGender === 'all' || cardGender === activeGender);
+                const matchesSearch = (name.includes(searchQuery) || title.includes(searchQuery));
 
-                if (matchesRole && matchesGender) {
+                if (matchesRole && matchesGender && matchesSearch) {
                     card.classList.remove('hidden');
+                    visibleGroups.add(`${cardRole}-${cardGender}`);
+                    if (cardRole === 'Pembina') {
+                        visibleGroups.add(`Pembina-all`);
+                    }
                 } else {
                     card.classList.add('hidden');
+                }
+            });
+
+            // 2. Process Division Section Headers
+            headers.forEach(header => {
+                const headerRole = header.getAttribute('data-role');
+                const headerGender = header.getAttribute('data-gender');
+
+                const matchesRole = (activeRole === 'all' || headerRole === activeRole);
+                const matchesGender = (activeGender === 'all' || headerGender === activeGender || headerGender === 'all');
+
+                const groupKey = `${headerRole}-${headerGender}`;
+                const hasVisibleCards = visibleGroups.has(groupKey);
+
+                if (matchesRole && matchesGender && hasVisibleCards) {
+                    header.classList.remove('hidden');
+                } else {
+                    header.classList.add('hidden');
                 }
             });
         }
 
         // SEARCH FUNCTION WITHIN CURRENT FILTER STATE
         function searchTeam() {
-            const searchQuery = document.getElementById('search-member').value.toLowerCase();
-            const cards = document.querySelectorAll('.team-card');
+            applyBothFilters();
+        }
 
-            cards.forEach(card => {
-                const name = card.querySelector('h3').innerText.toLowerCase();
-                const title = card.querySelector('p').innerText.toLowerCase();
-                
-                // Match search input AND currently active filter parameters
-                const matchesSearch = (name.includes(searchQuery) || title.includes(searchQuery));
-                const cardRole = card.getAttribute('data-role');
-                const cardGender = card.getAttribute('data-gender');
-                
-                const matchesRole = (activeRole === 'all' || cardRole === activeRole);
-                const matchesGender = (activeGender === 'all' || cardGender === activeGender);
+        // DIVISION DATA FOR MODALS
+        const divisionData = {
+            'BPH': {
+                title: 'Badan Pengurus Harian (BPH)',
+                desc: 'BPH merupakan struktur inti organisasi yang bertanggung jawab penuh dalam kepemimpinan, koordinasi umum, perencanaan strategis, serta pengawasan administrasi dan keuangan PMR Wira MA Sunan Pandanaran.',
+                proker: [
+                    'Mengatur dan memimpin jalannya organisasi secara berkesinambungan.',
+                    'Menyelenggarakan forum musyawarah pengurus rutin mingguan serta bulanan.',
+                    'Mengelola pembukuan sirkulasi keuangan, pengarsipan surat-menyurat, serta inventarisasi arsip administrasi.',
+                    'Melakukan monitoring aktif dan evaluasi berkala terhadap jalannya program kerja seluruh divisi fungsional.'
+                ]
+            },
+            'SPAB': {
+                title: 'Satuan Pendidikan Aman Bencana (SPAB)',
+                desc: 'Divisi khusus SPAB bergerak di bidang kesiapsiagaan sekolah, mitigasi risiko bencana alam, serta pelatihan penanggulangan keadaan darurat bagi siswa-siswi dan seluruh warga madrasah.',
+                proker: [
+                    'Mengadakan sosialisasi teoritis dan praktik mitigasi kebencanaan (gempa bumi, erupsi, kebakaran).',
+                    'Menyusun peta pemetaan rute evakuasi mandiri serta pengadaan plang penunjuk keselamatan di madrasah.',
+                    'Bekerja sama dengan BPBD Kabupaten Sleman dalam menyelenggarakan pelatihan mitigasi bencana.',
+                    'Melatih kesiapan respons darurat siswa-siswi baru saat pelaksanaan orientasi.'
+                ]
+            },
+            'PENGEMAS': {
+                title: 'Divisi Pengemas (PHBS & Pelayanan Kesehatan)',
+                desc: 'Bertanggung jawab langsung terhadap peningkatan taraf kesehatan siswa madrasah, penerapan pola hidup bersih sehat (PHBS), serta aksi pelayanan pengabdian kemanusiaan di masyarakat.',
+                proker: [
+                    'Mengadakan dan mendampingi program screening kesehatan bersama Puskesmas Ngaglik 1.',
+                    'Melaksanakan pemeliharaan, kebersihan obat, dan koordinasi piket Ruang Unit Kesehatan Sekolah (UKS).',
+                    'Menginisiasi aksi sosial kemanusiaan berkala seperti program donor darah sekolah bekerjasama dengan PMI.',
+                    'Menggalakkan kampanye kebersihan lingkungan dan pencegahan penyakit menular.'
+                ]
+            },
+            'HUMAS': {
+                title: 'Divisi Hubungan Masyarakat (Humas) & Publikasi',
+                desc: 'Berperan sebagai kanal komunikasi utama PMR Wira dengan pihak eksternal, madrasah, serta mempublikasikan konten mading digital yang edukatif dan inspiratif di media sosial.',
+                proker: [
+                    'Mendokumentasikan seluruh rangkaian kegiatan dan aksi sosial PMR Wira MASPA.',
+                    'Mengelola akun media sosial resmi (Instagram & TikTok) untuk menyebarkan program mading digital.',
+                    'Menyusun infografis edukatif berkala tentang tips pertolongan pertama dan isu kesehatan.',
+                    'Membangun jejaring silaturahmi, pertukaran informasi, dan kolaborasi dengan unit PMR sekolah lain.'
+                ]
+            },
+            'LOGISTIK': {
+                title: 'Divisi Logistik & Perlengkapan',
+                desc: 'Mengelola, mendata, memelihara, serta menyiapkan ketersediaan seluruh aset fisik medis, obat-obatan, tenda pertolongan, tandu evakuasi, dan perlengkapan latihan PMR.',
+                proker: [
+                    'Melakukan pencatatan inventaris berkala obat-obatan, bidai, mitela, serta kassa steril di UKS.',
+                    'Memastikan seluruh perlengkapan tandu darurat dan alat medis dalam kondisi siap pakai.',
+                    'Menyiapkan logistik posko kesehatan darurat pada acara besar madrasah (upacara, olahraga, kepramukaan).',
+                    'Mengelola pengadaan kebutuhan perlengkapan latihan praktik mingguan.'
+                ]
+            }
+        };
 
-                if (matchesSearch && matchesRole && matchesGender) {
-                    card.classList.remove('hidden');
-                } else {
-                    card.classList.add('hidden');
-                }
+        // OPEN DIVISION POPUP MODAL
+        function openDivisionModal(role) {
+            const data = divisionData[role];
+            if (!data) return;
+
+            document.getElementById('div-modal-title').innerText = data.title;
+            document.getElementById('div-modal-desc').innerText = data.desc;
+
+            const prokerList = document.getElementById('div-modal-proker');
+            prokerList.innerHTML = '';
+            data.proker.forEach(item => {
+                const li = document.createElement('li');
+                li.className = 'flex items-start space-x-2';
+                li.innerHTML = `
+                    <i class="fa-solid fa-circle-check text-brand-accent mt-1 flex-shrink-0 text-xs"></i>
+                    <span>${item}</span>
+                `;
+                prokerList.appendChild(li);
             });
+
+            const modal = document.getElementById('division-modal');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.firstElementChild.classList.remove('scale-95');
+                modal.firstElementChild.classList.add('scale-100');
+            }, 10);
+        }
+
+        // CLOSE DIVISION POPUP MODAL
+        function closeDivisionModal() {
+            const modal = document.getElementById('division-modal');
+            modal.firstElementChild.classList.add('scale-95');
+            modal.firstElementChild.classList.remove('scale-100');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 150);
         }
 
         // PROGRAM MODAL FUNCTIONS
@@ -1796,15 +1915,15 @@
             // Set Documentation Link in Modal
             const docWrapper = document.getElementById('modal-documentation-wrapper');
             const modalDocLink = document.getElementById('modal-documentation-link');
-                if (docLink && docLink !== '#') {
-                    modalDocLink.href = docLink;
-                    docWrapper.classList.remove('hidden');
-                } else {
-                    document.getElementById('modal-documentation-wrapper').classList.add('hidden');
-                }
+            if (docLink && docLink !== '#') {
+                modalDocLink.href = docLink;
+                docWrapper.classList.remove('hidden');
+            } else {
+                document.getElementById('modal-documentation-wrapper').classList.add('hidden');
+            }
 
-                const modal = document.getElementById('program-modal');
-                modal.classList.remove('hidden');
+            const modal = document.getElementById('program-modal');
+            modal.classList.remove('hidden');
             setTimeout(() => {
                 modal.firstElementChild.classList.remove('scale-95');
                 modal.firstElementChild.classList.add('scale-100');
