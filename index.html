@@ -50,13 +50,13 @@
 <body class="font-sans bg-slate-50 text-slate-800 leading-relaxed overflow-x-hidden">
 
     <!-- TOP BAR -->
-    <div class="bg-brand-primary text-slate-300 text-xs py-2.5 px-4 sm:px-8 flex justify-between items-center border-b border-slate-800">
-        <div class="flex items-center space-x-6">
-            <span class="flex items-center"><i class="fa-solid fa-envelope text-brand-accent mr-2"></i> pmrimtection@gmail.com</span>
+    <div class="bg-brand-primary text-slate-300 text-[10px] sm:text-xs py-2 px-4 sm:px-8 flex justify-between items-center border-b border-slate-800">
+        <div class="flex items-center space-x-4 sm:space-x-6">
+            <span class="flex items-center"><i class="fa-solid fa-envelope text-brand-accent mr-1.5 sm:mr-2"></i> pmrimtection@gmail.com</span>
             <span class="hidden md:flex items-center"><i class="fa-solid fa-graduation-cap text-brand-accent mr-2"></i> Unit Wira MA Sunan Pandanaran</span>
         </div>
-        <div class="flex items-center space-x-4">
-            <span class="text-[10px] bg-slate-800 text-brand-100 px-2.5 py-0.5 rounded-full font-semibold">Siamo Tutti Fratelli</span>
+        <div class="flex items-center space-x-3 sm:space-x-4">
+            <span class="text-[9px] sm:text-[10px] bg-slate-800 text-brand-100 px-2 py-0.5 rounded-full font-semibold">Siamo Tutti Fratelli</span>
             <div class="h-3 w-[1px] bg-slate-700"></div>
             <a href="https://www.instagram.com/pmrmaspa/" class="hover:text-brand-accent transition"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.tiktok.com/@pmrimtection2" class="hover:text-brand-accent transition"><i class="fa-brands fa-tiktok"></i></a>
@@ -64,43 +64,43 @@
     </div>
 
     <!-- HEADER / NAVIGATION -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+            <div class="flex justify-between items-center h-16 sm:h-20">
                 <!-- Logo & Brand -->
-                <div class="flex items-center space-x-3 cursor-pointer">
+                <div class="flex items-center space-x-2.5 sm:space-x-3 cursor-pointer">
                     <!-- Updated Logo Container with Fallback -->
-                    <div class="relative w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-md overflow-hidden border border-slate-150 p-1">
+                    <div class="relative w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-xl flex items-center justify-center shadow-md overflow-hidden border border-slate-150 p-1">
                         <img id="header-logo" 
                             src="https://lh3.googleusercontent.com/d/1_LiJcyWIMI9JPlkfPN9r-g69Ikr7tv1_" 
                             alt="Logo PMR Wira MASPA" 
                             class="w-full h-full object-contain"
                             onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/d/10hbhtIaLgXchVz9K-MGpbJzWFJMpas6P'; this.onerror=function(){ this.style.display='none'; document.getElementById('header-logo-fallback').classList.remove('hidden'); };" />
-                        <div id="header-logo-fallback" class="hidden text-brand-accent text-xl">
+                        <div id="header-logo-fallback" class="hidden text-brand-accent text-lg sm:text-xl">
                             <i class="fa-solid fa-kit-medical"></i>
                         </div>
                     </div>
                     <div>
-                        <span class="font-serif text-xl font-extrabold tracking-tight text-brand-primary block">PMR IMTECTION</span>
-                        <span class="text-[10px] tracking-widest font-bold text-slate-500 uppercase block -mt-1">MA Sunan Pandanaran</span>
+                        <span class="font-serif text-lg sm:text-xl font-extrabold tracking-tight text-brand-primary block">PMR IMTECTION</span>
+                        <span class="text-[9px] sm:text-[10px] tracking-widest font-bold text-slate-500 uppercase block -mt-1">MA Sunan Pandanaran</span>
                     </div>
                 </div>
 
                 <!-- Desktop Nav -->
-                <nav class="hidden md:flex space-x-8 items-center" id="desktop-nav">
+                <nav class="hidden md:flex space-x-6 lg:space-x-8 items-center" id="desktop-nav">
                     <a href="#beranda" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Beranda</a>
                     <a href="#prinsip" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">7 Prinsip</a>
                     <a href="#profil" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Profil &amp; Tri Bakti</a>
                     <a href="#program" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Event</a>
                     <a href="#anggota" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Struktur</a>
                     <a href="#kontak" class="text-sm font-semibold text-slate-700 hover:text-brand-accent transition-all duration-200 py-2">Hubungi</a>
-                    <a href="#kontak" class="bg-brand-primary hover:bg-slate-800 text-white text-xs font-bold uppercase tracking-wider py-3 px-6 rounded-lg shadow-md transition-all duration-200 transform hover:-translate-y-0.5">Gabung PMR</a>
+                    <a href="#kontak" class="bg-brand-primary hover:bg-slate-800 text-white text-xs font-bold uppercase tracking-wider py-2.5 px-5 rounded-lg shadow-md transition-all duration-200 transform hover:-translate-y-0.5">Gabung PMR</a>
                 </nav>
 
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-slate-700 hover:text-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent rounded p-1">
-                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
                     </button>
                 </div>
             </div>
@@ -108,15 +108,15 @@
 
         <!-- Mobile Navigation Drawer -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-xl transition-all duration-300">
-            <div class="px-4 pt-2 pb-6 space-y-3">
-                <a href="#beranda" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Beranda</a>
-                <a href="#prinsip" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">7 Prinsip Gerakan</a>
-                <a href="#profil" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Profil &amp; Tri Bakti</a>
-                <a href="#program" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Event</a>
-                <a href="#anggota" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Struktur Pengurus</a>
-                <a href="#kontak" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Hubungi</a>
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#beranda" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Beranda</a>
+                <a href="#prinsip" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">7 Prinsip Gerakan</a>
+                <a href="#profil" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Profil &amp; Tri Bakti</a>
+                <a href="#program" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Event</a>
+                <a href="#anggota" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Struktur Pengurus</a>
+                <a href="#kontak" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-accent">Hubungi</a>
                 <div class="pt-4 border-t border-slate-100">
-                    <a href="#kontak" class="block w-full text-center bg-brand-accent hover:bg-brand-800 text-white text-sm font-bold uppercase tracking-wider py-3 rounded-lg shadow-md">Gabung PMR</a>
+                    <a href="#kontak" class="block w-full text-center bg-brand-accent hover:bg-brand-800 text-white text-xs font-bold uppercase tracking-wider py-2.5 rounded-lg shadow-md">Gabung PMR</a>
                 </div>
             </div>
         </div>
@@ -126,38 +126,38 @@
     <div id="portal-view" class="transition-all duration-300">
         <!-- HERO SECTION -->
         <section id="beranda" 
-         class="relative bg-cover bg-center bg-no-repeat text-white py-28 lg:py-36 overflow-hidden flex items-center border-b border-slate-800" 
-         style="background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('https://lh3.googleusercontent.com/d/1bJQZu75ZRF5wAX1CroWkO5LhBodde3qt');">
+         class="relative bg-cover bg-center bg-no-repeat text-white py-16 sm:py-24 lg:py-36 overflow-hidden flex items-center border-b border-slate-800" 
+         style="background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.96)), url('https://lh3.googleusercontent.com/d/1bJQZu75ZRF5wAX1CroWkO5LhBodde3qt');">
             <!-- Decorative Background Elements -->
             <div class="absolute inset-0 opacity-15 pointer-events-none">
-                <div class="absolute top-10 left-10 w-96 h-96 rounded-full bg-brand-accent filter blur-[120px]"></div>
-                <div class="absolute bottom-10 right-10 w-[600px] h-[600px] rounded-full bg-brand-900 filter blur-[150px]"></div>
-                <div class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+                <div class="absolute top-10 left-10 w-64 h-64 sm:w-96 sm:h-96 rounded-full bg-brand-accent filter blur-[80px] sm:blur-[120px]"></div>
+                <div class="absolute bottom-10 right-10 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] rounded-full bg-brand-900 filter blur-[100px] sm:blur-[150px]"></div>
+                <div class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px] sm:[background-size:24px_24px]"></div>
             </div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     <!-- Text Info -->
-                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                        <div class="inline-flex items-center space-x-2.5 bg-brand-accent/15 border border-brand-accent/30 backdrop-blur-md px-4 py-2 rounded-full text-brand-200 text-xs font-bold tracking-wider uppercase mb-2">
-                            <span class="flex h-2.5 w-2.5 relative">
+                    <div class="lg:col-span-7 space-y-4 sm:space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center space-x-2 bg-brand-accent/15 border border-brand-accent/30 backdrop-blur-md px-3.5 py-1.5 rounded-full text-brand-200 text-[10px] sm:text-xs font-bold tracking-wider uppercase mb-1">
+                            <span class="flex h-2 w-2 relative">
                                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span>
-                                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-accent"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-accent"></span>
                             </span>
                             <span>Impact · Protect · Action</span>
                         </div>
-                        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
-                            Mewujudkan Karakter <br>
-                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-200 via-rose-300 to-rose-500">Relawan Muda Berjiwa Simpati, Empati, dan Toleransi</span>
+                        <h1 class="font-serif text-2xl sm:text-4xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+                            Mewujudkan Karakter <br class="hidden sm:inline">
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-200 via-rose-300 to-rose-500">Relawan Muda Berjiwa Simpati, Empati, &amp; Toleransi</span>
                         </h1>
-                        <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0">
+                        <p class="text-slate-300 text-xs sm:text-sm lg:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                             Organisasi pembinaan remaja Palang Merah Indonesia dalam mengasah karakter remaja dengan sikap menjaga, melindungi, dan mempengaruhi antar sesama.
                         </p>
-                        <div class="pt-4 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                            <a href="#profil" class="bg-brand-accent hover:bg-brand-800 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-accent/20 transition-all duration-300 transform hover:-translate-y-0.5 text-center">
-                                Telusuri Profil <i class="fa-solid fa-arrow-right ml-2"></i>
+                        <div class="pt-2 flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4 max-w-xs sm:max-w-none mx-auto lg:mx-0">
+                            <a href="#profil" class="bg-brand-accent hover:bg-brand-800 text-white text-xs sm:text-sm font-bold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl shadow-lg shadow-brand-accent/20 transition-all duration-300 transform hover:-translate-y-0.5 text-center">
+                                Telusuri Profil <i class="fa-solid fa-arrow-right ml-1.5"></i>
                             </a>
-                            <a href="#program" class="bg-white/5 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-xl border border-white/20 backdrop-blur-sm transition-all duration-300 text-center">
+                            <a href="#program" class="bg-white/5 hover:bg-white/10 text-white text-xs sm:text-sm font-semibold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl border border-white/20 backdrop-blur-sm transition-all duration-300 text-center">
                                 Inisiatif Kegiatan
                             </a>
                         </div>
@@ -165,32 +165,32 @@
                     
                     <!-- Decorative Graphic Panel / Card with Large Logo -->
                     <div class="lg:col-span-5 relative hidden lg:block">
-                        <div class="relative mx-auto w-full max-w-[420px]">
+                        <div class="relative mx-auto w-full max-w-[380px]">
                             <!-- Main Frame Mock -->
-                            <div class="bg-slate-900/95 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 shadow-2xl relative z-10 flex flex-col items-center text-center">
-                                <div class="w-full flex items-center space-x-2 mb-6 text-left">
-                                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                                    <div class="w-3 h-3 rounded-full bg-white/20"></div>
-                                    <span class="text-slate-600 text-xs ml-4 font-mono">pmr-imtection</span>
+                            <div class="bg-slate-900/95 backdrop-blur-xl border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl relative z-10 flex flex-col items-center text-center">
+                                <div class="w-full flex items-center space-x-2 mb-4 sm:mb-6 text-left">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-white/20"></div>
+                                    <span class="text-slate-600 text-[10px] sm:text-xs ml-3 font-mono">pmr-imtection</span>
                                 </div>
                                 
                                 <!-- Logo Display in Card (using updated 1.jpg) -->
-                                <div class="relative w-32 h-32 bg-white rounded-2xl p-2 border border-white/20 shadow-xl mb-4 flex items-center justify-center overflow-hidden">
+                                <div class="relative w-24 h-24 sm:w-32 sm:h-32 bg-white rounded-2xl p-2 border border-white/20 shadow-xl mb-4 flex items-center justify-center overflow-hidden">
                                     <img id="hero-logo" 
                                          src="https://lh3.googleusercontent.com/d/10hbhtIaLgXchVz9K-MGpbJzWFJMpas6P" 
                                          alt="Logo PMR Wira MASPA" 
                                          class="w-full h-full object-contain filter drop-shadow"
                                          onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/d/10hbhtIaLgXchVz9K-MGpbJzWFJMpas6P'; this.onerror=function(){ this.style.display='none'; document.getElementById('hero-logo-fallback').classList.remove('hidden'); };" />
-                                    <div id="hero-logo-fallback" class="hidden text-brand-accent text-5xl">
+                                    <div id="hero-logo-fallback" class="hidden text-brand-accent text-4xl sm:text-5xl">
                                         <i class="fa-solid fa-kit-medical"></i>
                                     </div>
                                 </div>
 
                                 <div class="space-y-4 w-full text-left">
-                                    <div class="bg-slate-950/50 rounded-xl p-4 border border-slate-800/80">
-                                        <p class="text-brand-accent font-mono text-xs font-bold">// UNIT WIRA MASPA</p>
-                                        <h3 class="text-white text-base font-bold mt-1">Siamo Tutti Fratelli</h3>
-                                        <p class="text-xs text-slate-400 mt-1">Kita Semua Bersaudara. Semboyan kemainan universal PMR Wira.</p>
+                                    <div class="bg-slate-950/50 rounded-xl p-3 sm:p-4 border border-slate-800/80">
+                                        <p class="text-brand-accent font-mono text-[10px] sm:text-xs font-bold">// UNIT WIRA MASPA</p>
+                                        <h3 class="text-white text-sm sm:text-base font-bold mt-1">Siamo Tutti Fratelli</h3>
+                                        <p class="text-[10px] sm:text-xs text-slate-400 mt-1">Kita Semua Bersaudara. Semboyan kemanusiaan universal PMR Wira.</p>
                                     </div>
                                 </div>
                             </div>
@@ -201,22 +201,22 @@
                 </div>
 
                 <!-- STATS BAR -->
-                <div class="mt-20 pt-12 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="mt-12 sm:mt-20 pt-8 sm:pt-12 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
                     <div>
-                        <span class="block text-4xl font-extrabold text-brand-accent">35</span>
-                        <span class="block text-xs text-slate-400 uppercase tracking-widest mt-1 font-semibold">Anggota</span>
+                        <span class="block text-2xl sm:text-4xl font-extrabold text-brand-accent">35</span>
+                        <span class="block text-[9px] sm:text-xs text-slate-400 uppercase tracking-widest mt-1 font-semibold">Anggota</span>
                     </div>
                     <div>
-                        <span class="block text-4xl font-extrabold text-brand-accent">3</span>
-                        <span class="block text-xs text-slate-400 uppercase tracking-widest mt-1 font-semibold">Kegiatan Sosial</span>
+                        <span class="block text-2xl sm:text-4xl font-extrabold text-brand-accent">3</span>
+                        <span class="block text-[9px] sm:text-xs text-slate-400 uppercase tracking-widest mt-1 font-semibold">Kegiatan Sosial</span>
                     </div>
                     <div>
-                        <span class="block text-4xl font-extrabold text-brand-accent">9</span>
-                        <span class="block text-xs text-slate-400 uppercase tracking-widest mt-1 font-semibold">Partisipasi Kegiatan</span>
+                        <span class="block text-2xl sm:text-4xl font-extrabold text-brand-accent">9</span>
+                        <span class="block text-[9px] sm:text-xs text-slate-400 uppercase tracking-widest mt-1 font-semibold">Partisipasi Kegiatan</span>
                     </div>
                     <div>
-                        <span class="block text-4xl font-extrabold text-brand-accent">100%</span>
-                        <span class="block text-xs text-slate-400 uppercase tracking-widest mt-1 font-semibold">Dedikasi Sukarela</span>
+                        <span class="block text-2xl sm:text-4xl font-extrabold text-brand-accent">100%</span>
+                        <span class="block text-[9px] sm:text-xs text-slate-400 uppercase tracking-widest mt-1 font-semibold">Dedikasi Sukarela</span>
                     </div>
                 </div>
             </div>
